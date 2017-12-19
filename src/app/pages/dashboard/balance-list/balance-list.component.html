@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xxl-6 col-xl-12" *ngFor="let balance of balances">
+        <nb-card>
+            <div class="icon-container">
+                <div class="icon" [ngClass]="{'danger': !balance.valueUp, 'success': balance.valueUp}">
+                    <i class="cf cf-{{ balance.currency | lowercase }}"></i>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="title">
+                    {{ balance.currency }}
+                </div>
+                <div class="status">
+                    {{ balance.available }}
+                </div>
+                <div class="status">
+                    {{ balance.pending }}
+                </div>
+                <div class="status">
+                    {{ balance.usdRate * balance.available | currency:'USD' }}
+                </div>
+            </div>
+        </nb-card>
+    </div>
+</div>
