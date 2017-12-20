@@ -54,6 +54,7 @@
         "font-awesome": "4.7.0",
         "intl": "1.2.5",
         "ionicons": "2.0.1",
+        "morgan": "^1.9.0",
         "nebular-icons": "1.0.6",
         "ng2-smart-table": "1.1.0",
         "ng2-tree": "2.0.0-alpha.10",
