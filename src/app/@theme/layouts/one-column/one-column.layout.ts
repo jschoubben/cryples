@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 // TODO: move layouts into the framework
 @Component({
-  selector: 'ngx-one-column-layout',
-  styleUrls: ['./one-column.layout.scss'],
-  template: `
+    selector: 'ngx-one-column-layout',
+    styleUrls: ['./one-column.layout.scss'],
+    encapsulation: ViewEncapsulation.Emulated,
+    template: `
     <nb-layout>
       <nb-layout-header fixed>
         <ngx-header></ngx-header>

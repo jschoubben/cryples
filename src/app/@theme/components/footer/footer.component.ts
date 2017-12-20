@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'ngx-footer',
-  styleUrls: ['./footer.component.scss'],
-  template: `
+    selector: 'ngx-footer',
+    styleUrls: ['./footer.component.scss'],
+    encapsulation: ViewEncapsulation.Emulated,
+    template: `
     <span class="created-by">Created by <b>me</b> 2017</span>
     <div class="socials">
     </div>

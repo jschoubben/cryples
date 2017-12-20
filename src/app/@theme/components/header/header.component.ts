@@ -1,39 +1,40 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { NbMenuService, NbSidebarService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-header',
-  styleUrls: ['./header.component.scss'],
-  templateUrl: './header.component.html',
+    selector: 'ngx-header',
+    styleUrls: ['./header.component.scss'],
+    encapsulation: ViewEncapsulation.Emulated,
+    templateUrl: './header.component.html',
 })
 export class HeaderComponent implements OnInit {
 
 
-  @Input() position = 'normal';
+    @Input() position = 'normal';
 
-  user: any;
+    user: any;
 
-  userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+    userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
 
-  constructor(private sidebarService: NbSidebarService,
-              private menuService: NbMenuService) {
-  }
+    constructor(private sidebarService: NbSidebarService,
+        private menuService: NbMenuService) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
-  toggleSidebar(): boolean {
-    this.sidebarService.toggle(true, 'menu-sidebar');
-    return false;
-  }
+    toggleSidebar(): boolean {
+        this.sidebarService.toggle(true, 'menu-sidebar');
+        return false;
+    }
 
-  toggleSettings(): boolean {
-    this.sidebarService.toggle(false, 'settings-sidebar');
-    return false;
-  }
+    toggleSettings(): boolean {
+        this.sidebarService.toggle(false, 'settings-sidebar');
+        return false;
+    }
 
-  goToHome() {
-    this.menuService.navigateHome();
-  }
+    goToHome() {
+        this.menuService.navigateHome();
+    }
 }

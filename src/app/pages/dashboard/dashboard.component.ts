@@ -1,19 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Inject, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+import { APP_CONFIG, AppConfig } from '../../app-config.module';
 import { CryptoService } from '../../@core/data/crypto.service';
 import { Balance, MarketSummary, MarketOverview } from '../../@core/models/bittrex.models';
 
 @Component({
     selector: 'ngx-dashboard',
     styleUrls: ['./dashboard.component.scss'],
+    encapsulation: ViewEncapsulation.Emulated,
     templateUrl: './dashboard.component.html',
 })
 export class DashboardComponent {
 
-    private balances: Balance[];
+    public balances: Balance[];
     private marketOverview: MarketOverview;
-    private totalWalletValue: number = 0;
+    public totalWalletValue: number = 0;
 
-    constructor(private cryptoService: CryptoService) {
+    constructor(private router: Router, @Inject(APP_CONFIG) private config: AppConfig, private cryptoService: CryptoService) {
+        if (!config.apiconfig.key || !config.apiconfig.secret) {
+            router.navigate(['/pages/configure']);
+            return;
+        }
         cryptoService.getBalances().subscribe(
             // Successful responses call the first callback.
             (data) => {

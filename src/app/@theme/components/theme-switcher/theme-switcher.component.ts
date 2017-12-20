@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { NbJSThemeOptions } from '@nebular/theme/services/js-themes/theme.options';
 
 @Component({
-  selector: 'ngx-theme-switcher',
-  styleUrls: ['./theme-switcher.component.scss'],
-  template: `
+    selector: 'ngx-theme-switcher',
+    styleUrls: ['./theme-switcher.component.scss'],
+    encapsulation: ViewEncapsulation.Emulated,
+    template: `
     <label class="theme-switch">
       <span class="light">Light</span>
       <div class="switch">
@@ -17,31 +18,34 @@ import { NbJSThemeOptions } from '@nebular/theme/services/js-themes/theme.option
   `,
 })
 export class ThemeSwitcherComponent implements OnInit {
-  theme: NbJSThemeOptions;
+    theme: NbJSThemeOptions;
 
-  constructor(private themeService: NbThemeService) {
-  }
+    constructor(private themeService: NbThemeService) {
+        themeService.changeTheme(localStorage.getItem('DEFAULT_THEME') || 'default');
+    }
 
-  ngOnInit() {
-    this.themeService.getJsTheme()
-      .subscribe((theme: NbJSThemeOptions) => this.theme = theme);
-  }
+    ngOnInit() {
+        this.themeService.getJsTheme()
+            .subscribe((theme: NbJSThemeOptions) => {
+                this.theme = theme;
+            });
+    }
 
-  toggleTheme(theme: boolean) {
-    const boolTheme = this.boolToTheme(theme);
-    this.themeService.changeTheme(boolTheme);
-    localStorage.setItem('DEFAULT_THEME', this.boolToTheme(theme));
-  }
+    toggleTheme(theme: boolean) {
+        const boolTheme = this.boolToTheme(theme);
+        this.themeService.changeTheme(boolTheme);
+        localStorage.setItem('DEFAULT_THEME', this.boolToTheme(theme));
+    }
 
-  currentBoolTheme() {
-    return this.themeToBool(this.theme);
-  }
+    currentBoolTheme() {
+        return this.themeToBool(this.theme);
+    }
 
-  private themeToBool(theme: NbJSThemeOptions) {
-    return theme.name === 'cosmic';
-  }
+    private themeToBool(theme: NbJSThemeOptions) {
+        return (theme || { name: 'cosmic' }).name === 'cosmic';
+    }
 
-  private boolToTheme(theme: boolean) {
-    return theme ? 'cosmic' : 'default';
-  }
+    private boolToTheme(theme: boolean) {
+        return theme ? 'cosmic' : 'default';
+    }
 }

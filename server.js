@@ -3,11 +3,13 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
+const morgan = require('morgan');
 
 // Get our API routes
 const bittrexApi = require('./server/routes/bittrex');
 
 const app = express();
+app.use(morgan('tiny'));
 
 // Parsers for POST data
 app.use(bodyParser.json());
@@ -31,6 +33,15 @@ app.get('*', (req, res) => {
  */
 const port = process.env.PORT || '3000';
 app.set('port', port);
+
+function requireHTTPS(req, res, next) {
+    if (req.get('x-site-deployment-id') && !req.get('x-arr-ssl')) {
+        return res.redirect('https://' + req.get('host') + req.url);
+    }
+    next();
+}
+
+app.use(requireHTTPS);
 
 /**
  * Create HTTP server.

@@ -1,24 +1,37 @@
+<h1> Configuration</h1>
+
 <div class="row">
-  <div class="col-xxxl-12">
-    <h1>Configuration</h1>
-    <nb-card>
-      <nb-card-header>API settings</nb-card-header>
-      <nb-card-body>
-        <div class="alert alert-primary">Your keys will be stored in
-          <b>local storage</b>.</div>
-        <div class="form-group">
-          <input type="text" placeholder="Key" class="form-control" name="apikey" [(ngModel)]="apikey" (ngModelChange)="saveKey($event)" />
-        </div>
-        <div class="form-group">
-          <input type="text" placeholder="Secret" class="form-control" name="apisecret" [(ngModel)]="apisecret" (ngModelChange)="saveSecret($event)" />
-        </div>
-      </nb-card-body>
-    </nb-card>
-    <nb-card>
-      <nb-card-header>Theme options</nb-card-header>
-      <nb-card-body>
-        <ngx-theme-switcher></ngx-theme-switcher>
-      </nb-card-body>
-    </nb-card>
-  </div>
+    <div class="col-xxxl-4 col-md-6 col-sm-12">
+        <nb-card>
+            <nb-card-header>Bittrex API settings</nb-card-header>
+            <nb-card-body>
+                <div class="alert alert-primary">
+                    <b>You cannot access any part of the application before entering your api settings.</b>
+                    <br />
+                    <br />Your keys will be stored in
+                    <b>local storage</b>, therefore, you can generate a new key for each device or re-use the same key on all
+                    your devices.
+                    <br />
+                    <br/>Make sure your connection is secure because your key will be submitted to the server to make a request
+                    to bittrex.
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Key" class="form-control" name="apikey" [(ngModel)]="apikey" (ngModelChange)="saveKey($event)"
+                    />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Secret" class="form-control" name="apisecret" [(ngModel)]="apisecret" (ngModelChange)="saveSecret($event)"
+                    />
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+    <div class="col-xxxl-4 col-md-6 col-sm-12">
+        <nb-card>
+            <nb-card-header>Theme options</nb-card-header>
+            <nb-card-body>
+                <ngx-theme-switcher></ngx-theme-switcher>
+            </nb-card-body>
+        </nb-card>
+    </div>
 </div>

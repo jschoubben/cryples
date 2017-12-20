@@ -4,8 +4,8 @@ webpackJsonp(["main"],{
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"app/pages/pages.module": [
-		"../../../../../src/app/pages/pages.module.ts",
+	"app/pages/pages.module.ngfactory": [
+		"../../../../../src/app/pages/pages.module.ngfactory.js",
 		"pages.module"
 	]
 };
@@ -30,53 +30,24 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoreModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__module_import_guard__ = __webpack_require__("../../../../../src/app/@core/module-import-guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_data_module__ = __webpack_require__("../../../../../src/app/@core/data/data.module.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_import_guard__ = __webpack_require__("../../../../../src/app/@core/module-import-guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_data_module__ = __webpack_require__("../../../../../src/app/@core/data/data.module.ts");
 
 
 var NB_CORE_PROVIDERS = [
-    __WEBPACK_IMPORTED_MODULE_3__data_data_module__["a" /* DataModule */].forRoot().providers,
+    __WEBPACK_IMPORTED_MODULE_1__data_data_module__["a" /* DataModule */].forRoot().providers,
 ];
 var CoreModule = (function () {
     function CoreModule(parentModule) {
-        Object(__WEBPACK_IMPORTED_MODULE_2__module_import_guard__["a" /* throwIfAlreadyLoaded */])(parentModule, 'CoreModule');
+        Object(__WEBPACK_IMPORTED_MODULE_0__module_import_guard__["a" /* throwIfAlreadyLoaded */])(parentModule, 'CoreModule');
     }
-    CoreModule_1 = CoreModule;
     CoreModule.forRoot = function () {
         return {
-            ngModule: CoreModule_1,
+            ngModule: CoreModule,
             providers: NB_CORE_PROVIDERS.slice(),
         };
     };
-    CoreModule = CoreModule_1 = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]
-            ],
-            exports: [],
-            declarations: [],
-        }),
-        __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Optional */])()), __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* SkipSelf */])()),
-        __metadata("design:paramtypes", [CoreModule])
-    ], CoreModule);
     return CoreModule;
-    var CoreModule_1;
 }());
 
 
@@ -88,24 +59,10 @@ var CoreModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CryptoService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_module__ = __webpack_require__("../../../../../src/app/app-config.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_bittrex_models__ = __webpack_require__("../../../../../src/app/@core/models/bittrex.models.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_module__ = __webpack_require__("../../../../../src/app/app-config.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_bittrex_models__ = __webpack_require__("../../../../../src/app/@core/models/bittrex.models.ts");
 
 
 
@@ -116,7 +73,7 @@ var CryptoService = (function () {
         this.config = config;
         this.getMarkets = function () {
             return this.http.get(this.config.baseUrl + '/getMarkets').map(function (data) {
-                var marketOverview = new __WEBPACK_IMPORTED_MODULE_4__models_bittrex_models__["a" /* MarketOverview */]();
+                var marketOverview = new __WEBPACK_IMPORTED_MODULE_3__models_bittrex_models__["a" /* MarketOverview */]();
                 marketOverview.usdMarkets = data.filter(function (m) { return m.marketName.toLowerCase().startsWith('usd'); });
                 marketOverview.bitcoinMarkets = data.filter(function (m) { return !m.marketName.toLowerCase().startsWith('usd'); });
                 return marketOverview;
@@ -126,11 +83,6 @@ var CryptoService = (function () {
             return this.http.post(this.config.baseUrl + '/getBalances', this.config.apiconfig);
         };
     }
-    CryptoService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */])(__WEBPACK_IMPORTED_MODULE_3__app_config_module__["a" /* APP_CONFIG */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__app_config_module__["b" /* AppConfig */]])
-    ], CryptoService);
     return CryptoService;
 }());
 
@@ -143,44 +95,24 @@ var CryptoService = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__state_service__ = __webpack_require__("../../../../../src/app/@core/data/state.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__crypto_service__ = __webpack_require__("../../../../../src/app/@core/data/crypto.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__state_service__ = __webpack_require__("../../../../../src/app/@core/data/state.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__crypto_service__ = __webpack_require__("../../../../../src/app/@core/data/crypto.service.ts");
 
 
 var SERVICES = [
-    __WEBPACK_IMPORTED_MODULE_2__state_service__["a" /* StateService */],
-    __WEBPACK_IMPORTED_MODULE_3__crypto_service__["a" /* CryptoService */]
+    __WEBPACK_IMPORTED_MODULE_0__state_service__["a" /* StateService */],
+    __WEBPACK_IMPORTED_MODULE_1__crypto_service__["a" /* CryptoService */]
 ];
 var DataModule = (function () {
     function DataModule() {
     }
-    DataModule_1 = DataModule;
     DataModule.forRoot = function () {
         return {
-            ngModule: DataModule_1,
+            ngModule: DataModule,
             providers: SERVICES.slice()
         };
     };
-    DataModule = DataModule_1 = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]
-            ],
-            providers: SERVICES.slice()
-        })
-    ], DataModule);
     return DataModule;
-    var DataModule_1;
 }());
 
 
@@ -192,17 +124,9 @@ var DataModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StateService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/of.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/of.js");
 
 
 
@@ -239,14 +163,14 @@ var StateService = (function () {
                 id: 'right',
             },
         ];
-        this.layoutState$ = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["a" /* BehaviorSubject */](this.layouts[0]);
-        this.sidebarState$ = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["a" /* BehaviorSubject */](this.sidebars[0]);
+        this.layoutState$ = new __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__["a" /* BehaviorSubject */](this.layouts[0]);
+        this.sidebarState$ = new __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__["a" /* BehaviorSubject */](this.sidebars[0]);
     }
     StateService.prototype.setLayoutState = function (state) {
         this.layoutState$.next(state);
     };
     StateService.prototype.getLayoutStates = function () {
-        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["a" /* Observable */].of(this.layouts);
+        return __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__["a" /* Observable */].of(this.layouts);
     };
     StateService.prototype.onLayoutState = function () {
         return this.layoutState$.asObservable();
@@ -255,14 +179,11 @@ var StateService = (function () {
         this.sidebarState$.next(state);
     };
     StateService.prototype.getSidebarStates = function () {
-        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["a" /* Observable */].of(this.sidebars);
+        return __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__["a" /* Observable */].of(this.sidebars);
     };
     StateService.prototype.onSidebarState = function () {
         return this.sidebarState$.asObservable();
     };
-    StateService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
-    ], StateService);
     return StateService;
 }());
 
@@ -383,76 +304,18 @@ function throwIfAlreadyLoaded(parentModule, moduleName) {
 
 /***/ }),
 
-/***/ "../../../../../src/app/@theme/components/footer/footer.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This is a starting point where we declare the maps of themes and globally available functions/mixins\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n:host-context(.nb-theme-default) {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  :host-context(.nb-theme-default) .socials {\n    font-size: 2rem; }\n    :host-context(.nb-theme-default) .socials a {\n      padding: 0.4rem;\n      color: #a4abb3;\n      transition: color ease-out 0.1s; }\n      :host-context(.nb-theme-default) .socials a:hover {\n        color: #2a2a2a; }\n  @media (max-width: 575px) {\n    :host-context(.nb-theme-default) .socials {\n      font-size: 1.5rem; } }\n\n:host-context(.nb-theme-cosmic) {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  :host-context(.nb-theme-cosmic) .socials {\n    font-size: 2rem; }\n    :host-context(.nb-theme-cosmic) .socials a {\n      padding: 0.4rem;\n      color: #a1a1e5;\n      transition: color ease-out 0.1s; }\n      :host-context(.nb-theme-cosmic) .socials a:hover {\n        color: #ffffff; }\n  @media (max-width: 575px) {\n    :host-context(.nb-theme-cosmic) .socials {\n      font-size: 1.5rem; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/@theme/components/footer/footer.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 var FooterComponent = (function () {
     function FooterComponent() {
     }
-    FooterComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-footer',
-            styles: [__webpack_require__("../../../../../src/app/@theme/components/footer/footer.component.scss")],
-            template: "\n    <span class=\"created-by\">Created by <b>me</b> 2017</span>\n    <div class=\"socials\">\n    </div>\n  ",
-        })
-    ], FooterComponent);
     return FooterComponent;
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/@theme/components/header/header.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"header-container\"\n     [class.left]=\"position === 'normal'\"\n     [class.right]=\"position === 'inverse'\">\n  <div class=\"logo-containter\">\n    <a (click)=\"toggleSidebar()\" href=\"#\" class=\"navigation\"><i class=\"nb-menu\"></i></a>\n    <div class=\"logo\" (click)=\"goToHome()\">Cryplz</div>\n  </div>\n</div>\n\n<nb-actions\n  size=\"medium\"\n  class=\"header-container\"\n  [class.right]=\"position === 'normal'\"\n  [class.left]=\"position === 'inverse'\">\n  <nb-action icon=\"nb-grid-b\" class=\"toggle-layout\" (click)=\"toggleSettings()\"></nb-action>\n  <nb-action class=\"control-item\" disabled icon=\"nb-notifications\"></nb-action>\n</nb-actions>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/@theme/components/header/header.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This is a starting point where we declare the maps of themes and globally available functions/mixins\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n:host-context(.nb-theme-default) {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  width: 100%; }\n  :host-context(.nb-theme-default) .left {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    -webkit-box-ordinal-group: 1;\n        -ms-flex-order: 0;\n            order: 0;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row; }\n  :host-context(.nb-theme-default) .right {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse; }\n  :host-context(.nb-theme-default) .logo-containter {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  :host-context(.nb-theme-default) .control-item {\n    display: block; }\n  :host-context(.nb-theme-default) .header-container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    width: 100%; }\n    :host-context(.nb-theme-default) .header-container .navigation {\n      padding-right: 1.25rem;\n      font-size: 2.5rem;\n      text-decoration: none; }\n      :host-context(.nb-theme-default) .header-container .navigation i {\n        display: block; }\n    :host-context(.nb-theme-default) .header-container .logo {\n      padding: 0 1.25rem;\n      font-size: 1.75rem;\n      font-weight: 500;\n      border-left: 1px solid #ebeef2;\n      white-space: nowrap; }\n      :host-context(.nb-theme-default) .header-container .logo span {\n        font-weight: 400; }\n  :host-context(.nb-theme-default) .toggle-layout /deep/ a {\n    display: block;\n    text-decoration: none;\n    line-height: 1; }\n    :host-context(.nb-theme-default) .toggle-layout /deep/ a i {\n      color: #40dc7e;\n      font-size: 2.25rem; }\n  @media (max-width: 991px) {\n    :host-context(.nb-theme-default) nb-action:not(.toggle-layout) {\n      border: none; }\n    :host-context(.nb-theme-default) .control-item {\n      display: none; }\n    :host-context(.nb-theme-default) .toggle-layout {\n      padding: 0; } }\n  @media (max-width: 767px) {\n    :host-context(.nb-theme-default) nb-user /deep/ .user-name {\n      display: none; } }\n  @media (max-width: 575px) {\n    :host-context(.nb-theme-default) .header-container .logo {\n      font-size: 1.25rem; }\n    :host-context(.nb-theme-default) .toggle-layout {\n      display: none; }\n    :host-context(.nb-theme-default) nb-action:not(.toggle-layout) {\n      padding: 0; } }\n  @media (max-width: 399px) {\n    :host-context(.nb-theme-default) .right /deep/ {\n      display: none; } }\n\n:host-context(.nb-theme-cosmic) {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  width: 100%; }\n  :host-context(.nb-theme-cosmic) .left {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    -webkit-box-ordinal-group: 1;\n        -ms-flex-order: 0;\n            order: 0;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row; }\n  :host-context(.nb-theme-cosmic) .right {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: row-reverse;\n            flex-direction: row-reverse; }\n  :host-context(.nb-theme-cosmic) .logo-containter {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  :host-context(.nb-theme-cosmic) .control-item {\n    display: block; }\n  :host-context(.nb-theme-cosmic) .header-container {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    width: 100%; }\n    :host-context(.nb-theme-cosmic) .header-container .navigation {\n      padding-right: 1.25rem;\n      font-size: 2.5rem;\n      text-decoration: none; }\n      :host-context(.nb-theme-cosmic) .header-container .navigation i {\n        display: block; }\n    :host-context(.nb-theme-cosmic) .header-container .logo {\n      padding: 0 1.25rem;\n      font-size: 1.75rem;\n      font-weight: 500;\n      border-left: 1px solid #342e73;\n      white-space: nowrap; }\n      :host-context(.nb-theme-cosmic) .header-container .logo span {\n        font-weight: 400; }\n  :host-context(.nb-theme-cosmic) .toggle-layout /deep/ a {\n    display: block;\n    text-decoration: none;\n    line-height: 1; }\n    :host-context(.nb-theme-cosmic) .toggle-layout /deep/ a i {\n      color: #00f9a6;\n      font-size: 2.25rem; }\n  @media (max-width: 991px) {\n    :host-context(.nb-theme-cosmic) nb-action:not(.toggle-layout) {\n      border: none; }\n    :host-context(.nb-theme-cosmic) .control-item {\n      display: none; }\n    :host-context(.nb-theme-cosmic) .toggle-layout {\n      padding: 0; } }\n  @media (max-width: 767px) {\n    :host-context(.nb-theme-cosmic) nb-user /deep/ .user-name {\n      display: none; } }\n  @media (max-width: 575px) {\n    :host-context(.nb-theme-cosmic) .header-container .logo {\n      font-size: 1.25rem; }\n    :host-context(.nb-theme-cosmic) .toggle-layout {\n      display: none; }\n    :host-context(.nb-theme-cosmic) nb-action:not(.toggle-layout) {\n      padding: 0; } }\n  @media (max-width: 399px) {\n    :host-context(.nb-theme-cosmic) .right /deep/ {\n      display: none; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -461,18 +324,7 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nebular_theme__ = __webpack_require__("../../../../@nebular/theme/index.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nebular_theme__ = __webpack_require__("../../../../@nebular/theme/index.js");
 
 var HeaderComponent = (function () {
     function HeaderComponent(sidebarService, menuService) {
@@ -494,19 +346,6 @@ var HeaderComponent = (function () {
     HeaderComponent.prototype.goToHome = function () {
         this.menuService.navigateHome();
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
-        __metadata("design:type", Object)
-    ], HeaderComponent.prototype, "position", void 0);
-    HeaderComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-header',
-            styles: [__webpack_require__("../../../../../src/app/@theme/components/header/header.component.scss")],
-            template: __webpack_require__("../../../../../src/app/@theme/components/header/header.component.html"),
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__nebular_theme__["j" /* NbSidebarService */],
-            __WEBPACK_IMPORTED_MODULE_1__nebular_theme__["f" /* NbMenuService */]])
-    ], HeaderComponent);
     return HeaderComponent;
 }());
 
@@ -531,50 +370,24 @@ var HeaderComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/@theme/components/theme-switcher/theme-switcher.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This is a starting point where we declare the maps of themes and globally available functions/mixins\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n:host-context(.nb-theme-default) {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  width: 50%; }\n  :host-context(.nb-theme-default) .theme-switch {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    cursor: pointer;\n    margin: 0; }\n    :host-context(.nb-theme-default) .theme-switch > span {\n      font-size: 1.125rem;\n      font-weight: 600;\n      transition: opacity 0.3s ease; }\n      :host-context(.nb-theme-default) .theme-switch > span.light {\n        color: #4b4b4b;\n        padding-right: 10px; }\n      :host-context(.nb-theme-default) .theme-switch > span.cosmic {\n        color: #a4abb3;\n        padding-left: 10px; }\n      :host-context(.nb-theme-default) .theme-switch > span:active {\n        opacity: 0.78; }\n  :host-context(.nb-theme-default) .switch {\n    position: relative;\n    display: inline-block;\n    width: 4rem;\n    height: 1.75rem;\n    margin: 0; }\n    :host-context(.nb-theme-default) .switch input {\n      display: none; }\n      :host-context(.nb-theme-default) .switch input:checked + .slider::before {\n        -webkit-transform: translateX(2.25rem);\n                transform: translateX(2.25rem); }\n    :host-context(.nb-theme-default) .switch .slider {\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      border-radius: 1.75rem;\n      background-color: #ebeff5; }\n    :host-context(.nb-theme-default) .switch .slider::before {\n      position: absolute;\n      content: '';\n      height: 1.75rem;\n      width: 1.75rem;\n      border-radius: 50%;\n      background-color: #40dc7e;\n      transition: 0.2s;\n      box-shadow: 0 0 0.25rem 0 rgba(164, 171, 179, 0.4); }\n  @media (max-width: 575px) {\n    :host-context(.nb-theme-default) .light, :host-context(.nb-theme-default) .cosmic {\n      display: none; } }\n  @media (max-width: 399px) {\n    :host-context(.nb-theme-default) {\n      -webkit-box-align: end;\n          -ms-flex-align: end;\n              align-items: flex-end; } }\n\n:host-context(.nb-theme-cosmic) {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  width: 50%; }\n  :host-context(.nb-theme-cosmic) .theme-switch {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    cursor: pointer;\n    margin: 0; }\n    :host-context(.nb-theme-cosmic) .theme-switch > span {\n      font-size: 1.125rem;\n      font-weight: 600;\n      transition: opacity 0.3s ease; }\n      :host-context(.nb-theme-cosmic) .theme-switch > span.light {\n        color: #d1d1ff;\n        padding-right: 10px; }\n      :host-context(.nb-theme-cosmic) .theme-switch > span.cosmic {\n        color: #a1a1e5;\n        padding-left: 10px; }\n      :host-context(.nb-theme-cosmic) .theme-switch > span.light {\n        color: #a1a1e5; }\n      :host-context(.nb-theme-cosmic) .theme-switch > span.cosmic {\n        color: #ffffff; }\n      :host-context(.nb-theme-cosmic) .theme-switch > span:active {\n        opacity: 0.78; }\n  :host-context(.nb-theme-cosmic) .switch {\n    position: relative;\n    display: inline-block;\n    width: 4rem;\n    height: 1.75rem;\n    margin: 0; }\n    :host-context(.nb-theme-cosmic) .switch input {\n      display: none; }\n      :host-context(.nb-theme-cosmic) .switch input:checked + .slider::before {\n        -webkit-transform: translateX(2.25rem);\n                transform: translateX(2.25rem); }\n    :host-context(.nb-theme-cosmic) .switch .slider {\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      border-radius: 1.75rem;\n      background-color: #2f296b; }\n    :host-context(.nb-theme-cosmic) .switch .slider::before {\n      position: absolute;\n      content: '';\n      height: 1.75rem;\n      width: 1.75rem;\n      border-radius: 50%;\n      background-color: #00d977;\n      transition: 0.2s;\n      box-shadow: 0 0 0.25rem 0 rgba(161, 161, 229, 0.4);\n      background-image: linear-gradient(to right, #ad59ff, #7659ff); }\n  @media (max-width: 575px) {\n    :host-context(.nb-theme-cosmic) .light, :host-context(.nb-theme-cosmic) .cosmic {\n      display: none; } }\n  @media (max-width: 399px) {\n    :host-context(.nb-theme-cosmic) {\n      -webkit-box-align: end;\n          -ms-flex-align: end;\n              align-items: flex-end; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/@theme/components/theme-switcher/theme-switcher.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ThemeSwitcherComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nebular_theme__ = __webpack_require__("../../../../@nebular/theme/index.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nebular_theme__ = __webpack_require__("../../../../@nebular/theme/index.js");
 
 var ThemeSwitcherComponent = (function () {
     function ThemeSwitcherComponent(themeService) {
         this.themeService = themeService;
+        themeService.changeTheme(localStorage.getItem('DEFAULT_THEME') || 'default');
     }
     ThemeSwitcherComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.themeService.getJsTheme()
-            .subscribe(function (theme) { return _this.theme = theme; });
+            .subscribe(function (theme) {
+            _this.theme = theme;
+        });
     };
     ThemeSwitcherComponent.prototype.toggleTheme = function (theme) {
         var boolTheme = this.boolToTheme(theme);
@@ -585,19 +398,11 @@ var ThemeSwitcherComponent = (function () {
         return this.themeToBool(this.theme);
     };
     ThemeSwitcherComponent.prototype.themeToBool = function (theme) {
-        return theme.name === 'cosmic';
+        return (theme || { name: 'cosmic' }).name === 'cosmic';
     };
     ThemeSwitcherComponent.prototype.boolToTheme = function (theme) {
         return theme ? 'cosmic' : 'default';
     };
-    ThemeSwitcherComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-theme-switcher',
-            styles: [__webpack_require__("../../../../../src/app/@theme/components/theme-switcher/theme-switcher.component.scss")],
-            template: "\n    <label class=\"theme-switch\">\n      <span class=\"light\">Light</span>\n      <div class=\"switch\">\n        <input type=\"checkbox\" [checked]=\"currentBoolTheme()\" (change)=\"toggleTheme(theme.checked)\" #theme>\n        <span class=\"slider\"></span>\n      </div>\n      <span class=\"cosmic\">Dark</span>\n    </label>\n  ",
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__nebular_theme__["m" /* NbThemeService */]])
-    ], ThemeSwitcherComponent);
     return ThemeSwitcherComponent;
 }());
 
@@ -622,70 +427,19 @@ var ThemeSwitcherComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/@theme/layouts/one-column/one-column.layout.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This is a starting point where we declare the maps of themes and globally available functions/mixins\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n:host-context(.nb-theme-default) nb-layout-column.small {\n  -webkit-box-flex: 0.15 !important;\n      -ms-flex: 0.15 !important;\n          flex: 0.15 !important; }\n\n:host-context(.nb-theme-default) nb-sidebar.settings-sidebar {\n  transition: width 0.3s ease;\n  width: 7.5rem;\n  overflow: hidden; }\n  :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed {\n    width: 0; }\n    :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container {\n      width: 0; }\n      :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container .scrollable {\n        width: 7.5rem;\n        padding: 1.25rem; }\n  :host-context(.nb-theme-default) nb-sidebar.settings-sidebar /deep/ .main-container {\n    width: 7.5rem;\n    background: #ffffff;\n    transition: width 0.3s ease;\n    overflow: hidden; }\n    :host-context(.nb-theme-default) nb-sidebar.settings-sidebar /deep/ .main-container .scrollable {\n      width: 7.5rem; }\n\n:host-context(.nb-theme-default) nb-sidebar.menu-sidebar {\n  margin-top: 2rem;\n  background: transparent; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container {\n    height: calc(100vh - 4.75rem - 2rem) !important;\n    border-top-right-radius: 0.375rem; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ nb-sidebar-header {\n    padding-bottom: 0.5rem;\n    text-align: center; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn {\n    padding: 0.75rem 2.5rem;\n    margin-top: -2rem;\n    font-weight: bold;\n    transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48); }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn i {\n      font-size: 2rem;\n      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn span {\n      padding-left: 0.25rem; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn i, :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn span {\n      vertical-align: middle; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted /deep/ nb-sidebar-header {\n    padding-left: 0;\n    padding-right: 0; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted .main-btn {\n    width: 46px;\n    height: 44px;\n    padding: 0.375rem;\n    border-radius: 5px;\n    transition: none; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted .main-btn span {\n      display: none; }\n\n@media (max-width: 399px) {\n  :host-context(.nb-theme-default) .main-content {\n    padding: 0.75rem !important; } }\n\n@media (max-width: 767px) {\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar {\n    margin-top: 0; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container {\n      height: calc(100vh - 4.75rem) !important;\n      border-top-right-radius: 0; }\n      :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container .scrollable {\n        padding-top: 0; }\n  :host-context(.nb-theme-default) .main-btn {\n    display: none; } }\n\n:host-context(.nb-theme-cosmic) nb-layout-column.small {\n  -webkit-box-flex: 0.15 !important;\n      -ms-flex: 0.15 !important;\n          flex: 0.15 !important; }\n\n:host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar {\n  transition: width 0.3s ease;\n  width: 7.5rem;\n  overflow: hidden; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed {\n    width: 0; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container {\n      width: 0; }\n      :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container .scrollable {\n        width: 7.5rem;\n        padding: 1.25rem; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar /deep/ .main-container {\n    width: 7.5rem;\n    background: #3d3780;\n    transition: width 0.3s ease;\n    overflow: hidden;\n    background: #2f296b; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar /deep/ .main-container .scrollable {\n      width: 7.5rem; }\n\n:host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar {\n  margin-top: 2rem;\n  background: transparent; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container {\n    height: calc(100vh - 4.75rem - 2rem) !important;\n    border-top-right-radius: 0.5rem; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ nb-sidebar-header {\n    padding-bottom: 0.5rem;\n    text-align: center; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn {\n    padding: 0.75rem 2.5rem;\n    margin-top: -2rem;\n    font-weight: bold;\n    transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48); }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn i {\n      font-size: 2rem;\n      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn span {\n      padding-left: 0.25rem; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn i, :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn span {\n      vertical-align: middle; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted /deep/ nb-sidebar-header {\n    padding-left: 0;\n    padding-right: 0; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted .main-btn {\n    width: 46px;\n    height: 44px;\n    padding: 0.375rem;\n    border-radius: 5px;\n    transition: none; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted .main-btn span {\n      display: none; }\n\n@media (max-width: 399px) {\n  :host-context(.nb-theme-cosmic) .main-content {\n    padding: 0.75rem !important; } }\n\n@media (max-width: 767px) {\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar {\n    margin-top: 0; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container {\n      height: calc(100vh - 4.75rem) !important;\n      border-top-right-radius: 0; }\n      :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container .scrollable {\n        padding-top: 0; }\n  :host-context(.nb-theme-cosmic) .main-btn {\n    display: none; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/@theme/layouts/one-column/one-column.layout.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OneColumnLayoutComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 // TODO: move layouts into the framework
 var OneColumnLayoutComponent = (function () {
     function OneColumnLayoutComponent() {
     }
-    OneColumnLayoutComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-one-column-layout',
-            styles: [__webpack_require__("../../../../../src/app/@theme/layouts/one-column/one-column.layout.scss")],
-            template: "\n    <nb-layout>\n      <nb-layout-header fixed>\n        <ngx-header></ngx-header>\n      </nb-layout-header>\n\n      <nb-sidebar class=\"menu-sidebar\" tag=\"menu-sidebar\" responsive>\n        <ng-content select=\"nb-menu\"></ng-content>\n      </nb-sidebar>\n\n      <nb-layout-column>\n        <ng-content select=\"router-outlet\"></ng-content>\n      </nb-layout-column>\n\n      <nb-layout-footer fixed>\n        <ngx-footer></ngx-footer>\n      </nb-layout-footer>\n    </nb-layout>\n  ",
-        })
-    ], OneColumnLayoutComponent);
     return OneColumnLayoutComponent;
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/@theme/layouts/three-columns/three-columns.layout.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This is a starting point where we declare the maps of themes and globally available functions/mixins\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n:host-context(.nb-theme-default) nb-layout-column.small {\n  -webkit-box-flex: 0.15 !important;\n      -ms-flex: 0.15 !important;\n          flex: 0.15 !important; }\n\n:host-context(.nb-theme-default) nb-sidebar.settings-sidebar {\n  transition: width 0.3s ease;\n  width: 7.5rem;\n  overflow: hidden; }\n  :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed {\n    width: 0; }\n    :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container {\n      width: 0; }\n      :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container .scrollable {\n        width: 7.5rem;\n        padding: 1.25rem; }\n  :host-context(.nb-theme-default) nb-sidebar.settings-sidebar /deep/ .main-container {\n    width: 7.5rem;\n    background: #ffffff;\n    transition: width 0.3s ease;\n    overflow: hidden; }\n    :host-context(.nb-theme-default) nb-sidebar.settings-sidebar /deep/ .main-container .scrollable {\n      width: 7.5rem; }\n\n:host-context(.nb-theme-default) nb-sidebar.menu-sidebar {\n  margin-top: 2rem;\n  background: transparent; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container {\n    height: calc(100vh - 4.75rem - 2rem) !important;\n    border-top-right-radius: 0.375rem; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ nb-sidebar-header {\n    padding-bottom: 0.5rem;\n    text-align: center; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn {\n    padding: 0.75rem 2.5rem;\n    margin-top: -2rem;\n    font-weight: bold;\n    transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48); }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn i {\n      font-size: 2rem;\n      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn span {\n      padding-left: 0.25rem; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn i, :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn span {\n      vertical-align: middle; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted /deep/ nb-sidebar-header {\n    padding-left: 0;\n    padding-right: 0; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted .main-btn {\n    width: 46px;\n    height: 44px;\n    padding: 0.375rem;\n    border-radius: 5px;\n    transition: none; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted .main-btn span {\n      display: none; }\n\n@media (max-width: 399px) {\n  :host-context(.nb-theme-default) .main-content {\n    padding: 0.75rem !important; } }\n\n@media (max-width: 767px) {\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar {\n    margin-top: 0; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container {\n      height: calc(100vh - 4.75rem) !important;\n      border-top-right-radius: 0; }\n      :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container .scrollable {\n        padding-top: 0; }\n  :host-context(.nb-theme-default) .main-btn {\n    display: none; } }\n\n:host-context(.nb-theme-cosmic) nb-layout-column.small {\n  -webkit-box-flex: 0.15 !important;\n      -ms-flex: 0.15 !important;\n          flex: 0.15 !important; }\n\n:host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar {\n  transition: width 0.3s ease;\n  width: 7.5rem;\n  overflow: hidden; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed {\n    width: 0; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container {\n      width: 0; }\n      :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container .scrollable {\n        width: 7.5rem;\n        padding: 1.25rem; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar /deep/ .main-container {\n    width: 7.5rem;\n    background: #3d3780;\n    transition: width 0.3s ease;\n    overflow: hidden;\n    background: #2f296b; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar /deep/ .main-container .scrollable {\n      width: 7.5rem; }\n\n:host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar {\n  margin-top: 2rem;\n  background: transparent; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container {\n    height: calc(100vh - 4.75rem - 2rem) !important;\n    border-top-right-radius: 0.5rem; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ nb-sidebar-header {\n    padding-bottom: 0.5rem;\n    text-align: center; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn {\n    padding: 0.75rem 2.5rem;\n    margin-top: -2rem;\n    font-weight: bold;\n    transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48); }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn i {\n      font-size: 2rem;\n      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn span {\n      padding-left: 0.25rem; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn i, :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn span {\n      vertical-align: middle; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted /deep/ nb-sidebar-header {\n    padding-left: 0;\n    padding-right: 0; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted .main-btn {\n    width: 46px;\n    height: 44px;\n    padding: 0.375rem;\n    border-radius: 5px;\n    transition: none; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted .main-btn span {\n      display: none; }\n\n@media (max-width: 399px) {\n  :host-context(.nb-theme-cosmic) .main-content {\n    padding: 0.75rem !important; } }\n\n@media (max-width: 767px) {\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar {\n    margin-top: 0; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container {\n      height: calc(100vh - 4.75rem) !important;\n      border-top-right-radius: 0; }\n      :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container .scrollable {\n        padding-top: 0; }\n  :host-context(.nb-theme-cosmic) .main-btn {\n    display: none; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -694,47 +448,14 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ThreeColumnsLayoutComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 // TODO: move layouts into the framework
 var ThreeColumnsLayoutComponent = (function () {
     function ThreeColumnsLayoutComponent() {
     }
-    ThreeColumnsLayoutComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-three-columns-layout',
-            styles: [__webpack_require__("../../../../../src/app/@theme/layouts/three-columns/three-columns.layout.scss")],
-            template: "\n    <nb-layout>\n      <nb-layout-header fixed>\n        <ngx-header></ngx-header>\n      </nb-layout-header>\n\n      <nb-sidebar class=\"menu-sidebar\" tag=\"menu-sidebar\" responsive >\n        <nb-sidebar-header>\n          <a href=\"#\" class=\"btn btn-hero-success main-btn\">\n            Basic\n          </a>\n        </nb-sidebar-header>\n        <ng-content select=\"nb-menu\"></ng-content>\n      </nb-sidebar>\n\n      <nb-layout-column class=\"small\">\n      </nb-layout-column>\n\n      <nb-layout-column right>\n        <ng-content select=\"router-outlet\"></ng-content>\n      </nb-layout-column>\n\n      <nb-layout-column class=\"small\">\n      </nb-layout-column>\n\n      <nb-layout-footer fixed>\n        <ngx-footer></ngx-footer>\n      </nb-layout-footer>\n    </nb-layout>\n  ",
-        })
-    ], ThreeColumnsLayoutComponent);
     return ThreeColumnsLayoutComponent;
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/app/@theme/layouts/two-columns/two-columns.layout.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This is a starting point where we declare the maps of themes and globally available functions/mixins\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n/**\n * This mixin generates keyfames.\n * Because of all keyframes can't be scoped,\n * we need to puts unique name in each btn-pulse call.\n */\n/**\n * @license\n * Copyright Akveo. All Rights Reserved.\n * Licensed under the MIT License. See License.txt in the project root for license information.\n */\n:host-context(.nb-theme-default) nb-layout-column.small {\n  -webkit-box-flex: 0.15 !important;\n      -ms-flex: 0.15 !important;\n          flex: 0.15 !important; }\n\n:host-context(.nb-theme-default) nb-sidebar.settings-sidebar {\n  transition: width 0.3s ease;\n  width: 7.5rem;\n  overflow: hidden; }\n  :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed {\n    width: 0; }\n    :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container {\n      width: 0; }\n      :host-context(.nb-theme-default) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container .scrollable {\n        width: 7.5rem;\n        padding: 1.25rem; }\n  :host-context(.nb-theme-default) nb-sidebar.settings-sidebar /deep/ .main-container {\n    width: 7.5rem;\n    background: #ffffff;\n    transition: width 0.3s ease;\n    overflow: hidden; }\n    :host-context(.nb-theme-default) nb-sidebar.settings-sidebar /deep/ .main-container .scrollable {\n      width: 7.5rem; }\n\n:host-context(.nb-theme-default) nb-sidebar.menu-sidebar {\n  margin-top: 2rem;\n  background: transparent; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container {\n    height: calc(100vh - 4.75rem - 2rem) !important;\n    border-top-right-radius: 0.375rem; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ nb-sidebar-header {\n    padding-bottom: 0.5rem;\n    text-align: center; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn {\n    padding: 0.75rem 2.5rem;\n    margin-top: -2rem;\n    font-weight: bold;\n    transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48); }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn i {\n      font-size: 2rem;\n      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn span {\n      padding-left: 0.25rem; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn i, :host-context(.nb-theme-default) nb-sidebar.menu-sidebar .main-btn span {\n      vertical-align: middle; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted /deep/ nb-sidebar-header {\n    padding-left: 0;\n    padding-right: 0; }\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted .main-btn {\n    width: 46px;\n    height: 44px;\n    padding: 0.375rem;\n    border-radius: 5px;\n    transition: none; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar.compacted .main-btn span {\n      display: none; }\n\n@media (max-width: 399px) {\n  :host-context(.nb-theme-default) .main-content {\n    padding: 0.75rem !important; } }\n\n@media (max-width: 767px) {\n  :host-context(.nb-theme-default) nb-sidebar.menu-sidebar {\n    margin-top: 0; }\n    :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container {\n      height: calc(100vh - 4.75rem) !important;\n      border-top-right-radius: 0; }\n      :host-context(.nb-theme-default) nb-sidebar.menu-sidebar /deep/ .main-container .scrollable {\n        padding-top: 0; }\n  :host-context(.nb-theme-default) .main-btn {\n    display: none; } }\n\n:host-context(.nb-theme-cosmic) nb-layout-column.small {\n  -webkit-box-flex: 0.15 !important;\n      -ms-flex: 0.15 !important;\n          flex: 0.15 !important; }\n\n:host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar {\n  transition: width 0.3s ease;\n  width: 7.5rem;\n  overflow: hidden; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed {\n    width: 0; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container {\n      width: 0; }\n      :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar.collapsed /deep/ .main-container .scrollable {\n        width: 7.5rem;\n        padding: 1.25rem; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar /deep/ .main-container {\n    width: 7.5rem;\n    background: #3d3780;\n    transition: width 0.3s ease;\n    overflow: hidden;\n    background: #2f296b; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.settings-sidebar /deep/ .main-container .scrollable {\n      width: 7.5rem; }\n\n:host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar {\n  margin-top: 2rem;\n  background: transparent; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container {\n    height: calc(100vh - 4.75rem - 2rem) !important;\n    border-top-right-radius: 0.5rem; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ nb-sidebar-header {\n    padding-bottom: 0.5rem;\n    text-align: center; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn {\n    padding: 0.75rem 2.5rem;\n    margin-top: -2rem;\n    font-weight: bold;\n    transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48); }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn i {\n      font-size: 2rem;\n      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn span {\n      padding-left: 0.25rem; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn i, :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar .main-btn span {\n      vertical-align: middle; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted /deep/ nb-sidebar-header {\n    padding-left: 0;\n    padding-right: 0; }\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted .main-btn {\n    width: 46px;\n    height: 44px;\n    padding: 0.375rem;\n    border-radius: 5px;\n    transition: none; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar.compacted .main-btn span {\n      display: none; }\n\n@media (max-width: 399px) {\n  :host-context(.nb-theme-cosmic) .main-content {\n    padding: 0.75rem !important; } }\n\n@media (max-width: 767px) {\n  :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar {\n    margin-top: 0; }\n    :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container {\n      height: calc(100vh - 4.75rem) !important;\n      border-top-right-radius: 0; }\n      :host-context(.nb-theme-cosmic) nb-sidebar.menu-sidebar /deep/ .main-container .scrollable {\n        padding-top: 0; }\n  :host-context(.nb-theme-cosmic) .main-btn {\n    display: none; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -743,25 +464,10 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwoColumnsLayoutComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 // TODO: move layouts into the framework
 var TwoColumnsLayoutComponent = (function () {
     function TwoColumnsLayoutComponent() {
     }
-    TwoColumnsLayoutComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-two-columns-layout',
-            styles: [__webpack_require__("../../../../../src/app/@theme/layouts/two-columns/two-columns.layout.scss")],
-            template: "\n    <nb-layout>\n      <nb-layout-header fixed>\n        <ngx-header></ngx-header>\n      </nb-layout-header>\n\n      <nb-sidebar class=\"menu-sidebar\" tag=\"menu-sidebar\" responsive >\n        <ng-content select=\"nb-menu\"></ng-content>\n      </nb-sidebar>\n\n      <nb-layout-column class=\"small\">\n      </nb-layout-column>\n\n      <nb-layout-column right>\n        <ng-content select=\"router-outlet\"></ng-content>\n      </nb-layout-column>\n\n      <nb-layout-footer fixed>\n        <ngx-footer></ngx-footer>\n      </nb-layout-footer>\n\n    </nb-layout>\n  ",
-        })
-    ], TwoColumnsLayoutComponent);
     return TwoColumnsLayoutComponent;
 }());
 
@@ -774,14 +480,6 @@ var TwoColumnsLayoutComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CapitalizePipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 var CapitalizePipe = (function () {
     function CapitalizePipe() {
     }
@@ -790,9 +488,6 @@ var CapitalizePipe = (function () {
             ? (input.charAt(0).toUpperCase() + input.slice(1).toLowerCase())
             : input;
     };
-    CapitalizePipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Pipe */])({ name: 'ngxCapitalize' })
-    ], CapitalizePipe);
     return CapitalizePipe;
 }());
 
@@ -825,14 +520,6 @@ var CapitalizePipe = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PluralPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 var PluralPipe = (function () {
     function PluralPipe() {
     }
@@ -845,9 +532,6 @@ var PluralPipe = (function () {
                 ? input + " " + pluralLabel
                 : input + " " + label + "s";
     };
-    PluralPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Pipe */])({ name: 'ngxPlural' })
-    ], PluralPipe);
     return PluralPipe;
 }());
 
@@ -860,23 +544,12 @@ var PluralPipe = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoundPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 var RoundPipe = (function () {
     function RoundPipe() {
     }
     RoundPipe.prototype.transform = function (input) {
         return Math.round(input);
     };
-    RoundPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Pipe */])({ name: 'ngxRound' })
-    ], RoundPipe);
     return RoundPipe;
 }());
 
@@ -889,14 +562,6 @@ var RoundPipe = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimingPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
 var TimingPipe = (function () {
     function TimingPipe() {
     }
@@ -911,9 +576,6 @@ var TimingPipe = (function () {
     TimingPipe.prototype.initZero = function (time) {
         return time < 10 ? '0' : '';
     };
-    TimingPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Pipe */])({ name: 'timing' })
-    ], TimingPipe);
     return TimingPipe;
 }());
 
@@ -921,14 +583,14 @@ var TimingPipe = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/@theme/styles/theme.cosmic.ts":
+/***/ "../../../../../src/app/@theme/styles/theme.dark.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return COSMIC_THEME; });
-var COSMIC_THEME = {
-    name: 'dark',
-    base: 'light',
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DARK_THEME; });
+var DARK_THEME = {
+    name: 'cosmic',
+    base: 'default',
     variables: {
         temperature: [
             '#2ec7fe',
@@ -1006,13 +668,13 @@ var COSMIC_THEME = {
 
 /***/ }),
 
-/***/ "../../../../../src/app/@theme/styles/theme.default.ts":
+/***/ "../../../../../src/app/@theme/styles/theme.light.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DEFAULT_THEME; });
-var DEFAULT_THEME = {
-    name: 'light',
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LIGHT_THEME; });
+var LIGHT_THEME = {
+    name: 'default',
     base: null,
     variables: {
         // Safari fix
@@ -1097,22 +759,15 @@ var DEFAULT_THEME = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ThemeModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nebular_theme__ = __webpack_require__("../../../../@nebular/theme/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components__ = __webpack_require__("../../../../../src/app/@theme/components/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes__ = __webpack_require__("../../../../../src/app/@theme/pipes/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__layouts__ = __webpack_require__("../../../../../src/app/@theme/layouts/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__styles_theme_default__ = __webpack_require__("../../../../../src/app/@theme/styles/theme.default.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__styles_theme_cosmic__ = __webpack_require__("../../../../../src/app/@theme/styles/theme.cosmic.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nebular_theme__ = __webpack_require__("../../../../@nebular/theme/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components__ = __webpack_require__("../../../../../src/app/@theme/components/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes__ = __webpack_require__("../../../../../src/app/@theme/pipes/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__layouts__ = __webpack_require__("../../../../../src/app/@theme/layouts/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__styles_theme_light__ = __webpack_require__("../../../../../src/app/@theme/styles/theme.light.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__styles_theme_dark__ = __webpack_require__("../../../../../src/app/@theme/styles/theme.dark.ts");
 
 
 
@@ -1122,57 +777,47 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var BASE_MODULES = [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* ReactiveFormsModule */]];
+var BASE_MODULES = [__WEBPACK_IMPORTED_MODULE_0__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_1__angular_forms__["n" /* ReactiveFormsModule */]];
 var NB_MODULES = [
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["b" /* NbCardModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["d" /* NbLayoutModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["k" /* NbTabsetModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["g" /* NbRouteTabsetModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["e" /* NbMenuModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["n" /* NbUserModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["a" /* NbActionsModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["h" /* NbSearchModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["i" /* NbSidebarModule */],
-    __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["c" /* NbCheckboxModule */],
-    __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["b" /* NbCardModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["d" /* NbLayoutModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["i" /* NbTabsetModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["f" /* NbRouteTabsetModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["e" /* NbMenuModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["k" /* NbUserModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["a" /* NbActionsModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["g" /* NbSearchModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["h" /* NbSidebarModule */],
+    __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["c" /* NbCheckboxModule */],
+    __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */],
 ];
 var COMPONENTS = [
-    __WEBPACK_IMPORTED_MODULE_5__components__["c" /* ThemeSwitcherComponent */],
-    __WEBPACK_IMPORTED_MODULE_5__components__["b" /* HeaderComponent */],
-    __WEBPACK_IMPORTED_MODULE_5__components__["a" /* FooterComponent */],
-    __WEBPACK_IMPORTED_MODULE_7__layouts__["a" /* OneColumnLayoutComponent */],
-    __WEBPACK_IMPORTED_MODULE_7__layouts__["b" /* ThreeColumnsLayoutComponent */],
-    __WEBPACK_IMPORTED_MODULE_7__layouts__["c" /* TwoColumnsLayoutComponent */],
+    __WEBPACK_IMPORTED_MODULE_4__components__["c" /* ThemeSwitcherComponent */],
+    __WEBPACK_IMPORTED_MODULE_4__components__["b" /* HeaderComponent */],
+    __WEBPACK_IMPORTED_MODULE_4__components__["a" /* FooterComponent */],
+    __WEBPACK_IMPORTED_MODULE_6__layouts__["a" /* OneColumnLayoutComponent */],
+    __WEBPACK_IMPORTED_MODULE_6__layouts__["b" /* ThreeColumnsLayoutComponent */],
+    __WEBPACK_IMPORTED_MODULE_6__layouts__["c" /* TwoColumnsLayoutComponent */],
 ];
 var PIPES = [
-    __WEBPACK_IMPORTED_MODULE_6__pipes__["a" /* CapitalizePipe */],
-    __WEBPACK_IMPORTED_MODULE_6__pipes__["b" /* PluralPipe */],
-    __WEBPACK_IMPORTED_MODULE_6__pipes__["c" /* RoundPipe */],
-    __WEBPACK_IMPORTED_MODULE_6__pipes__["d" /* TimingPipe */],
+    __WEBPACK_IMPORTED_MODULE_5__pipes__["a" /* CapitalizePipe */],
+    __WEBPACK_IMPORTED_MODULE_5__pipes__["b" /* PluralPipe */],
+    __WEBPACK_IMPORTED_MODULE_5__pipes__["c" /* RoundPipe */],
+    __WEBPACK_IMPORTED_MODULE_5__pipes__["d" /* TimingPipe */],
 ];
-var NB_THEME_PROVIDERS = __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["l" /* NbThemeModule */].forRoot({
+var NB_THEME_PROVIDERS = __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["j" /* NbThemeModule */].forRoot({
     name: localStorage.getItem('DEFAULT_THEME') || 'default',
-}, [__WEBPACK_IMPORTED_MODULE_8__styles_theme_default__["a" /* DEFAULT_THEME */], __WEBPACK_IMPORTED_MODULE_9__styles_theme_cosmic__["a" /* COSMIC_THEME */]]).providers.concat(__WEBPACK_IMPORTED_MODULE_4__nebular_theme__["i" /* NbSidebarModule */].forRoot().providers, __WEBPACK_IMPORTED_MODULE_4__nebular_theme__["e" /* NbMenuModule */].forRoot().providers);
+}, [__WEBPACK_IMPORTED_MODULE_7__styles_theme_light__["a" /* LIGHT_THEME */], __WEBPACK_IMPORTED_MODULE_8__styles_theme_dark__["a" /* DARK_THEME */]]).providers.concat(__WEBPACK_IMPORTED_MODULE_3__nebular_theme__["h" /* NbSidebarModule */].forRoot().providers, __WEBPACK_IMPORTED_MODULE_3__nebular_theme__["e" /* NbMenuModule */].forRoot().providers);
 var ThemeModule = (function () {
     function ThemeModule() {
     }
-    ThemeModule_1 = ThemeModule;
     ThemeModule.forRoot = function () {
         return {
-            ngModule: ThemeModule_1,
+            ngModule: ThemeModule,
             providers: NB_THEME_PROVIDERS.slice(),
         };
     };
-    ThemeModule = ThemeModule_1 = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            imports: BASE_MODULES.concat(NB_MODULES),
-            exports: BASE_MODULES.concat(NB_MODULES, COMPONENTS, PIPES),
-            declarations: COMPONENTS.concat(PIPES),
-        })
-    ], ThemeModule);
     return ThemeModule;
-    var ThemeModule_1;
 }());
 
 
@@ -1184,19 +829,13 @@ var ThemeModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return APP_CONFIG; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AppConfig; });
+/* unused harmony export AppConfig */
 /* unused harmony export ApiConfig */
-/* unused harmony export APP_DI_CONFIG */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return APP_DI_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return AppConfigModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
-var APP_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* InjectionToken */]('app.config');
+var APP_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* InjectionToken */]('app.config');
 var AppConfig = (function () {
     function AppConfig() {
     }
@@ -1219,14 +858,6 @@ var APP_DI_CONFIG = {
 var AppConfigModule = (function () {
     function AppConfigModule() {
     }
-    AppConfigModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            providers: [{
-                    provide: APP_CONFIG,
-                    useValue: APP_DI_CONFIG
-                }]
-        })
-    ], AppConfigModule);
     return AppConfigModule;
 }());
 
@@ -1239,16 +870,6 @@ var AppConfigModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
 var routes = [
     { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
     { path: '', redirectTo: 'pages', pathMatch: 'full' },
@@ -1260,14 +881,39 @@ var config = {
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
     }
-    AppRoutingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_0__angular_router__["d" /* RouterModule */].forRoot(routes, config)],
-            exports: [__WEBPACK_IMPORTED_MODULE_0__angular_router__["d" /* RouterModule */]],
-        })
-    ], AppRoutingModule);
     return AppRoutingModule;
 }());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.ngfactory.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export RenderType_AppComponent */
+/* unused harmony export View_AppComponent_0 */
+/* unused harmony export View_AppComponent_Host_0 */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponentNgFactory; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/**
+* @fileoverview This file is generated by the Angular template compiler.
+* Do not edit.
+* @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
+* tslint:disable
+*/ 
+
+
+
+var styles_AppComponent = [];
+var RenderType_AppComponent = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_19" /* ɵcrt */]({ encapsulation: 2, styles: styles_AppComponent, data: {} });
+
+function View_AppComponent_0(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_44" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* ɵeld */](0, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_20" /* ɵdid */](1, 212992, null, 0, __WEBPACK_IMPORTED_MODULE_1__angular_router__["o" /* RouterOutlet */], [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewContainerRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ComponentFactoryResolver */], [8, null], __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ChangeDetectorRef */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_AppComponent_Host_0(_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_44" /* ɵvid */](0, [(_l()(), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* ɵeld */](0, 0, null, null, 1, "ngx-app", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_20" /* ɵdid */](1, 49152, null, 0, __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], [], null, null)], null, null); }
+var AppComponentNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* ɵccf */]("ngx-app", __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], View_AppComponent_Host_0, {}, {}, []);
 
 
 
@@ -1278,50 +924,188 @@ var AppRoutingModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_module__ = __webpack_require__("../../../../../src/app/app-config.module.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-/**
- * @license
- * Copyright Akveo. All Rights Reserved.
- * Licensed under the MIT License. See License.txt in the project root for license information.
- */
-
-
-
 var AppComponent = (function () {
-    function AppComponent(router, config) {
-        this.router = router;
-        this.config = config;
-        if (!config.apiconfig.key || !config.apiconfig.secret) {
-            router.navigate(['/pages/configure']);
-        }
+    function AppComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-    };
-    AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'ngx-app',
-            template: '<router-outlet></router-outlet>',
-        }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */])(__WEBPACK_IMPORTED_MODULE_2__app_config_module__["a" /* APP_CONFIG */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_2__app_config_module__["b" /* AppConfig */]])
-    ], AppComponent);
     return AppComponent;
 }());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.module.ngfactory.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModuleNgFactory; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__node_modules_ng_bootstrap_ng_bootstrap_alert_alert_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/alert/alert.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_ng_bootstrap_ng_bootstrap_tooltip_tooltip_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/tooltip/tooltip.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__node_modules_ng_bootstrap_ng_bootstrap_typeahead_typeahead_window_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/typeahead/typeahead-window.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__node_modules_ng_bootstrap_ng_bootstrap_datepicker_datepicker_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/datepicker/datepicker.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__node_modules_ng_bootstrap_ng_bootstrap_modal_modal_backdrop_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/modal/modal-backdrop.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__node_modules_ng_bootstrap_ng_bootstrap_modal_modal_window_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/modal/modal-window.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_ng_bootstrap_ng_bootstrap_popover_popover_ngfactory__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/popover/popover.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__node_modules_nebular_theme_components_search_search_component_ngfactory__ = __webpack_require__("../../../../@nebular/theme/components/search/search.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component_ngfactory__ = __webpack_require__("../../../../../src/app/app.component.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__ = __webpack_require__("../../../animations/esm5/browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ng_bootstrap_ng_bootstrap_modal_modal_stack__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/modal/modal-stack.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ng_bootstrap_ng_bootstrap_modal_modal__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/modal/modal.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ng_bootstrap_ng_bootstrap_alert_alert_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/alert/alert-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ng_bootstrap_ng_bootstrap_progressbar_progressbar_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/progressbar/progressbar-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ng_bootstrap_ng_bootstrap_tooltip_tooltip_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/tooltip/tooltip-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ng_bootstrap_ng_bootstrap_typeahead_typeahead_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/typeahead/typeahead-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ng_bootstrap_ng_bootstrap_accordion_accordion_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/accordion/accordion-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ng_bootstrap_ng_bootstrap_carousel_carousel_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/carousel/carousel-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ng_bootstrap_ng_bootstrap_datepicker_ngb_calendar__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/datepicker/ngb-calendar.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ng_bootstrap_ng_bootstrap_datepicker_datepicker_i18n__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/datepicker/datepicker-i18n.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ng_bootstrap_ng_bootstrap_datepicker_ngb_date_parser_formatter__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/datepicker/ngb-date-parser-formatter.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ng_bootstrap_ng_bootstrap_datepicker_datepicker_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/datepicker/datepicker-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ng_bootstrap_ng_bootstrap_dropdown_dropdown_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/dropdown/dropdown-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ng_bootstrap_ng_bootstrap_pagination_pagination_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/pagination/pagination-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ng_bootstrap_ng_bootstrap_popover_popover_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/popover/popover-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ng_bootstrap_ng_bootstrap_rating_rating_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/rating/rating-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ng_bootstrap_ng_bootstrap_tabset_tabset_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/tabset/tabset-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__ng_bootstrap_ng_bootstrap_timepicker_timepicker_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/timepicker/timepicker-config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__nebular_theme_components_search_search_service__ = __webpack_require__("../../../../@nebular/theme/components/search/search.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__nebular_theme_services_js_themes_registry_service__ = __webpack_require__("../../../../@nebular/theme/services/js-themes-registry.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__ = __webpack_require__("../../../../@nebular/theme/theme.options.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__nebular_theme_services_breakpoints_service__ = __webpack_require__("../../../../@nebular/theme/services/breakpoints.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__nebular_theme_services_theme_service__ = __webpack_require__("../../../../@nebular/theme/services/theme.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__nebular_theme_services_spinner_service__ = __webpack_require__("../../../../@nebular/theme/services/spinner.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__nebular_theme_components_sidebar_sidebar_service__ = __webpack_require__("../../../../@nebular/theme/components/sidebar/sidebar.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__nebular_theme_components_menu_menu_service__ = __webpack_require__("../../../../@nebular/theme/components/menu/menu.service.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__core_data_state_service__ = __webpack_require__("../../../../../src/app/@core/data/state.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__core_data_crypto_service__ = __webpack_require__("../../../../../src/app/@core/data/crypto.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__app_config_module__ = __webpack_require__("../../../../../src/app/app-config.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__ng_bootstrap_ng_bootstrap_alert_alert_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/alert/alert.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__ng_bootstrap_ng_bootstrap_buttons_buttons_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/buttons/buttons.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__ng_bootstrap_ng_bootstrap_collapse_collapse_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/collapse/collapse.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__ng_bootstrap_ng_bootstrap_progressbar_progressbar_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/progressbar/progressbar.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ng_bootstrap_ng_bootstrap_tooltip_tooltip_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/tooltip/tooltip.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__ng_bootstrap_ng_bootstrap_typeahead_typeahead_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/typeahead/typeahead.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__ng_bootstrap_ng_bootstrap_accordion_accordion_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/accordion/accordion.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__ng_bootstrap_ng_bootstrap_carousel_carousel_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/carousel/carousel.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__ng_bootstrap_ng_bootstrap_datepicker_datepicker_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/datepicker/datepicker.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__ng_bootstrap_ng_bootstrap_dropdown_dropdown_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/dropdown/dropdown.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__ng_bootstrap_ng_bootstrap_modal_modal_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/modal/modal.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__ng_bootstrap_ng_bootstrap_pagination_pagination_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/pagination/pagination.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__ng_bootstrap_ng_bootstrap_popover_popover_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/popover/popover.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__ng_bootstrap_ng_bootstrap_rating_rating_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/rating/rating.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__ng_bootstrap_ng_bootstrap_tabset_tabset_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/tabset/tabset.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__ng_bootstrap_ng_bootstrap_timepicker_timepicker_module__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/timepicker/timepicker.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__ng_bootstrap_ng_bootstrap_index__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__nebular_theme_components_shared_shared_module__ = __webpack_require__("../../../../@nebular/theme/components/shared/shared.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__nebular_theme_components_card_card_module__ = __webpack_require__("../../../../@nebular/theme/components/card/card.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__nebular_theme_components_layout_layout_module__ = __webpack_require__("../../../../@nebular/theme/components/layout/layout.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__nebular_theme_components_tabset_tabset_module__ = __webpack_require__("../../../../@nebular/theme/components/tabset/tabset.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__nebular_theme_components_route_tabset_route_tabset_module__ = __webpack_require__("../../../../@nebular/theme/components/route-tabset/route-tabset.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__nebular_theme_components_menu_menu_module__ = __webpack_require__("../../../../@nebular/theme/components/menu/menu.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__nebular_theme_components_user_user_module__ = __webpack_require__("../../../../@nebular/theme/components/user/user.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__nebular_theme_components_actions_actions_module__ = __webpack_require__("../../../../@nebular/theme/components/actions/actions.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__nebular_theme_components_search_search_module__ = __webpack_require__("../../../../@nebular/theme/components/search/search.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__nebular_theme_components_sidebar_sidebar_module__ = __webpack_require__("../../../../@nebular/theme/components/sidebar/sidebar.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__nebular_theme_components_checkbox_checkbox_module__ = __webpack_require__("../../../../@nebular/theme/components/checkbox/checkbox.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__theme_theme_module__ = __webpack_require__("../../../../../src/app/@theme/theme.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__core_core_module__ = __webpack_require__("../../../../../src/app/@core/core.module.ts");
+/**
+* @fileoverview This file is generated by the Angular template compiler.
+* Do not edit.
+* @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride}
+* tslint:disable
+*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModuleNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_18" /* ɵcmf */](__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]], function (_l) { return __WEBPACK_IMPORTED_MODULE_0__angular_core__["_32" /* ɵmod */]([__WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ɵCodegenComponentFactoryResolver */], [[8, [__WEBPACK_IMPORTED_MODULE_3__node_modules_ng_bootstrap_ng_bootstrap_alert_alert_ngfactory__["a" /* NgbAlertNgFactory */], __WEBPACK_IMPORTED_MODULE_4__node_modules_ng_bootstrap_ng_bootstrap_tooltip_tooltip_ngfactory__["a" /* NgbTooltipWindowNgFactory */], __WEBPACK_IMPORTED_MODULE_5__node_modules_ng_bootstrap_ng_bootstrap_typeahead_typeahead_window_ngfactory__["a" /* NgbTypeaheadWindowNgFactory */], __WEBPACK_IMPORTED_MODULE_6__node_modules_ng_bootstrap_ng_bootstrap_datepicker_datepicker_ngfactory__["a" /* NgbDatepickerNgFactory */], __WEBPACK_IMPORTED_MODULE_7__node_modules_ng_bootstrap_ng_bootstrap_modal_modal_backdrop_ngfactory__["a" /* NgbModalBackdropNgFactory */], __WEBPACK_IMPORTED_MODULE_8__node_modules_ng_bootstrap_ng_bootstrap_modal_modal_window_ngfactory__["a" /* NgbModalWindowNgFactory */], __WEBPACK_IMPORTED_MODULE_9__node_modules_ng_bootstrap_ng_bootstrap_popover_popover_ngfactory__["a" /* NgbPopoverWindowNgFactory */], __WEBPACK_IMPORTED_MODULE_10__node_modules_nebular_theme_components_search_search_component_ngfactory__["a" /* NbSearchFieldComponentNgFactory */], __WEBPACK_IMPORTED_MODULE_11__app_component_ngfactory__["a" /* AppComponentNgFactory */]]], [3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ComponentFactoryResolver */]], __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* NgModuleRef */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* LOCALE_ID */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_31" /* ɵm */], [[3, __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* LOCALE_ID */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_12__angular_common__["n" /* NgLocalization */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["m" /* NgLocaleLocalization */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* LOCALE_ID */], [2, __WEBPACK_IMPORTED_MODULE_12__angular_common__["s" /* ɵa */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* APP_ID */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_22" /* ɵf */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* IterableDiffers */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_28" /* ɵk */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* KeyValueDiffers */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_29" /* ɵl */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["c" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["r" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](6144, __WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Sanitizer */], null, [__WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["c" /* DomSanitizer */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["f" /* HAMMER_GESTURE_CONFIG */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["g" /* HammerGestureConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["d" /* EVENT_MANAGER_PLUGINS */], function (p0_0, p0_1, p1_0, p2_0, p2_1) { return [new __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["k" /* ɵDomEventsPlugin */](p0_0, p0_1), new __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["o" /* ɵKeyEventsPlugin */](p1_0), new __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["n" /* ɵHammerGesturesPlugin */](p2_0, p2_1)]; }, [__WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgZone */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["f" /* HAMMER_GESTURE_CONFIG */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["e" /* EventManager */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["e" /* EventManager */], [__WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["d" /* EVENT_MANAGER_PLUGINS */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgZone */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](135680, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["m" /* ɵDomSharedStylesHost */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["m" /* ɵDomSharedStylesHost */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["l" /* ɵDomRendererFactory2 */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["l" /* ɵDomRendererFactory2 */], [__WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["e" /* EventManager */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["m" /* ɵDomSharedStylesHost */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__["a" /* AnimationDriver */], __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["d" /* ɵc */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__["c" /* ɵAnimationStyleNormalizer */], __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["e" /* ɵd */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__["b" /* ɵAnimationEngine */], __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["c" /* ɵb */], [__WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__["a" /* AnimationDriver */], __WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__["c" /* ɵAnimationStyleNormalizer */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* RendererFactory2 */], __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["f" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["l" /* ɵDomRendererFactory2 */], __WEBPACK_IMPORTED_MODULE_14__angular_animations_browser__["b" /* ɵAnimationEngine */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgZone */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](6144, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["p" /* ɵSharedStylesHost */], null, [__WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["m" /* ɵDomSharedStylesHost */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Testability */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Testability */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgZone */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["h" /* Meta */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["h" /* Meta */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["i" /* Title */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["i" /* Title */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_16__angular_animations__["b" /* AnimationBuilder */], __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["b" /* ɵBrowserAnimationBuilder */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* RendererFactory2 */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["b" /* DOCUMENT */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["h" /* HttpXsrfTokenExtractor */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["m" /* ɵg */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["d" /* DOCUMENT */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* PLATFORM_ID */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["k" /* ɵe */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["n" /* ɵh */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["n" /* ɵh */], [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["h" /* HttpXsrfTokenExtractor */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["l" /* ɵf */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["a" /* HTTP_INTERCEPTORS */], function (p0_0) { return [p0_0]; }, [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["n" /* ɵh */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["j" /* ɵd */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["j" /* ɵd */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](6144, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["i" /* XhrFactory */], null, [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["j" /* ɵd */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["g" /* HttpXhrBackend */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["g" /* HttpXhrBackend */], [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["i" /* XhrFactory */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](6144, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["b" /* HttpBackend */], null, [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["g" /* HttpXhrBackend */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["f" /* HttpHandler */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["o" /* ɵinterceptingHandler */], [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["b" /* HttpBackend */], [2, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["a" /* HTTP_INTERCEPTORS */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["c" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["c" /* HttpClient */], [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["f" /* HttpHandler */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_18__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["x" /* ɵf */], [__WEBPACK_IMPORTED_MODULE_18__angular_router__["l" /* Router */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_18__angular_router__["e" /* NoPreloading */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["e" /* NoPreloading */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](6144, __WEBPACK_IMPORTED_MODULE_18__angular_router__["g" /* PreloadingStrategy */], null, [__WEBPACK_IMPORTED_MODULE_18__angular_router__["e" /* NoPreloading */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](135680, __WEBPACK_IMPORTED_MODULE_18__angular_router__["p" /* RouterPreloader */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["p" /* RouterPreloader */], [__WEBPACK_IMPORTED_MODULE_18__angular_router__["l" /* Router */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModuleFactoryLoader */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Compiler */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injector */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["g" /* PreloadingStrategy */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_18__angular_router__["f" /* PreloadAllModules */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["f" /* PreloadAllModules */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_18__angular_router__["i" /* ROUTER_INITIALIZER */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["A" /* ɵi */], [__WEBPACK_IMPORTED_MODULE_18__angular_router__["y" /* ɵg */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](5120, __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* APP_BOOTSTRAP_LISTENER */], function (p0_0) { return [p0_0]; }, [__WEBPACK_IMPORTED_MODULE_18__angular_router__["i" /* ROUTER_INITIALIZER */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_19__angular_forms__["q" /* ɵi */], __WEBPACK_IMPORTED_MODULE_19__angular_forms__["q" /* ɵi */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_20__ng_bootstrap_ng_bootstrap_modal_modal_stack__["a" /* NgbModalStack */], __WEBPACK_IMPORTED_MODULE_20__ng_bootstrap_ng_bootstrap_modal_modal_stack__["a" /* NgbModalStack */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* ApplicationRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injector */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ComponentFactoryResolver */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_21__ng_bootstrap_ng_bootstrap_modal_modal__["a" /* NgbModal */], __WEBPACK_IMPORTED_MODULE_21__ng_bootstrap_ng_bootstrap_modal_modal__["a" /* NgbModal */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injector */], __WEBPACK_IMPORTED_MODULE_20__ng_bootstrap_ng_bootstrap_modal_modal_stack__["a" /* NgbModalStack */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_22__ng_bootstrap_ng_bootstrap_alert_alert_config__["a" /* NgbAlertConfig */], __WEBPACK_IMPORTED_MODULE_22__ng_bootstrap_ng_bootstrap_alert_alert_config__["a" /* NgbAlertConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_23__ng_bootstrap_ng_bootstrap_progressbar_progressbar_config__["a" /* NgbProgressbarConfig */], __WEBPACK_IMPORTED_MODULE_23__ng_bootstrap_ng_bootstrap_progressbar_progressbar_config__["a" /* NgbProgressbarConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_24__ng_bootstrap_ng_bootstrap_tooltip_tooltip_config__["a" /* NgbTooltipConfig */], __WEBPACK_IMPORTED_MODULE_24__ng_bootstrap_ng_bootstrap_tooltip_tooltip_config__["a" /* NgbTooltipConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_25__ng_bootstrap_ng_bootstrap_typeahead_typeahead_config__["a" /* NgbTypeaheadConfig */], __WEBPACK_IMPORTED_MODULE_25__ng_bootstrap_ng_bootstrap_typeahead_typeahead_config__["a" /* NgbTypeaheadConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_26__ng_bootstrap_ng_bootstrap_accordion_accordion_config__["a" /* NgbAccordionConfig */], __WEBPACK_IMPORTED_MODULE_26__ng_bootstrap_ng_bootstrap_accordion_accordion_config__["a" /* NgbAccordionConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_27__ng_bootstrap_ng_bootstrap_carousel_carousel_config__["a" /* NgbCarouselConfig */], __WEBPACK_IMPORTED_MODULE_27__ng_bootstrap_ng_bootstrap_carousel_carousel_config__["a" /* NgbCarouselConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_28__ng_bootstrap_ng_bootstrap_datepicker_ngb_calendar__["a" /* NgbCalendar */], __WEBPACK_IMPORTED_MODULE_28__ng_bootstrap_ng_bootstrap_datepicker_ngb_calendar__["b" /* NgbCalendarGregorian */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_29__ng_bootstrap_ng_bootstrap_datepicker_datepicker_i18n__["a" /* NgbDatepickerI18n */], __WEBPACK_IMPORTED_MODULE_29__ng_bootstrap_ng_bootstrap_datepicker_datepicker_i18n__["b" /* NgbDatepickerI18nDefault */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_30__ng_bootstrap_ng_bootstrap_datepicker_ngb_date_parser_formatter__["b" /* NgbDateParserFormatter */], __WEBPACK_IMPORTED_MODULE_30__ng_bootstrap_ng_bootstrap_datepicker_ngb_date_parser_formatter__["a" /* NgbDateISOParserFormatter */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_31__ng_bootstrap_ng_bootstrap_datepicker_datepicker_config__["a" /* NgbDatepickerConfig */], __WEBPACK_IMPORTED_MODULE_31__ng_bootstrap_ng_bootstrap_datepicker_datepicker_config__["a" /* NgbDatepickerConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_32__ng_bootstrap_ng_bootstrap_dropdown_dropdown_config__["a" /* NgbDropdownConfig */], __WEBPACK_IMPORTED_MODULE_32__ng_bootstrap_ng_bootstrap_dropdown_dropdown_config__["a" /* NgbDropdownConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_33__ng_bootstrap_ng_bootstrap_pagination_pagination_config__["a" /* NgbPaginationConfig */], __WEBPACK_IMPORTED_MODULE_33__ng_bootstrap_ng_bootstrap_pagination_pagination_config__["a" /* NgbPaginationConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_34__ng_bootstrap_ng_bootstrap_popover_popover_config__["a" /* NgbPopoverConfig */], __WEBPACK_IMPORTED_MODULE_34__ng_bootstrap_ng_bootstrap_popover_popover_config__["a" /* NgbPopoverConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_35__ng_bootstrap_ng_bootstrap_rating_rating_config__["a" /* NgbRatingConfig */], __WEBPACK_IMPORTED_MODULE_35__ng_bootstrap_ng_bootstrap_rating_rating_config__["a" /* NgbRatingConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_36__ng_bootstrap_ng_bootstrap_tabset_tabset_config__["a" /* NgbTabsetConfig */], __WEBPACK_IMPORTED_MODULE_36__ng_bootstrap_ng_bootstrap_tabset_tabset_config__["a" /* NgbTabsetConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_37__ng_bootstrap_ng_bootstrap_timepicker_timepicker_config__["a" /* NgbTimepickerConfig */], __WEBPACK_IMPORTED_MODULE_37__ng_bootstrap_ng_bootstrap_timepicker_timepicker_config__["a" /* NgbTimepickerConfig */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_19__angular_forms__["d" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_19__angular_forms__["d" /* FormBuilder */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_38__nebular_theme_components_search_search_service__["a" /* NbSearchService */], __WEBPACK_IMPORTED_MODULE_38__nebular_theme_components_search_search_service__["a" /* NbSearchService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_39__nebular_theme_services_js_themes_registry_service__["b" /* NbJSThemesRegistry */], __WEBPACK_IMPORTED_MODULE_39__nebular_theme_services_js_themes_registry_service__["b" /* NbJSThemesRegistry */], [__WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["a" /* nbBuiltInJSThemesToken */], __WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["b" /* nbJSThemesToken */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_41__nebular_theme_services_breakpoints_service__["b" /* NbMediaBreakpointsService */], __WEBPACK_IMPORTED_MODULE_41__nebular_theme_services_breakpoints_service__["b" /* NbMediaBreakpointsService */], [__WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["c" /* nbMediaBreakpointsToken */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_42__nebular_theme_services_theme_service__["a" /* NbThemeService */], __WEBPACK_IMPORTED_MODULE_42__nebular_theme_services_theme_service__["a" /* NbThemeService */], [__WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["d" /* nbThemeOptionsToken */], __WEBPACK_IMPORTED_MODULE_41__nebular_theme_services_breakpoints_service__["b" /* NbMediaBreakpointsService */], __WEBPACK_IMPORTED_MODULE_39__nebular_theme_services_js_themes_registry_service__["b" /* NbJSThemesRegistry */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_43__nebular_theme_services_spinner_service__["a" /* NbSpinnerService */], __WEBPACK_IMPORTED_MODULE_43__nebular_theme_services_spinner_service__["a" /* NbSpinnerService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_44__nebular_theme_components_sidebar_sidebar_service__["a" /* NbSidebarService */], __WEBPACK_IMPORTED_MODULE_44__nebular_theme_components_sidebar_sidebar_service__["a" /* NbSidebarService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_45__nebular_theme_components_menu_menu_service__["b" /* NbMenuService */], __WEBPACK_IMPORTED_MODULE_45__nebular_theme_components_menu_menu_service__["b" /* NbMenuService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_45__nebular_theme_components_menu_menu_service__["a" /* NbMenuInternalService */], __WEBPACK_IMPORTED_MODULE_45__nebular_theme_components_menu_menu_service__["a" /* NbMenuInternalService */], [__WEBPACK_IMPORTED_MODULE_18__angular_router__["l" /* Router */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["g" /* Location */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_46__core_data_state_service__["a" /* StateService */], __WEBPACK_IMPORTED_MODULE_46__core_data_state_service__["a" /* StateService */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](4608, __WEBPACK_IMPORTED_MODULE_47__core_data_crypto_service__["a" /* CryptoService */], __WEBPACK_IMPORTED_MODULE_47__core_data_crypto_service__["a" /* CryptoService */], [__WEBPACK_IMPORTED_MODULE_17__angular_common_http__["c" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_48__app_config_module__["a" /* APP_CONFIG */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_12__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["b" /* CommonModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* ErrorHandler */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["q" /* ɵa */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgProbeToken */], function () { return [__WEBPACK_IMPORTED_MODULE_18__angular_router__["t" /* ɵb */]()]; }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_18__angular_router__["y" /* ɵg */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["y" /* ɵg */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injector */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* APP_INITIALIZER */], function (p0_0, p1_0) { return [__WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["t" /* ɵh */](p0_0), __WEBPACK_IMPORTED_MODULE_18__angular_router__["z" /* ɵh */](p1_0)]; }, [[2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgProbeToken */]], __WEBPACK_IMPORTED_MODULE_18__angular_router__["y" /* ɵg */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* ApplicationInitStatus */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* ApplicationInitStatus */], [[2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* APP_INITIALIZER */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](131584, __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* ApplicationRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* ApplicationRef */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgZone */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ɵConsole */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injector */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* ErrorHandler */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* ApplicationInitStatus */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationModule */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationModule */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* ApplicationRef */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["a" /* BrowserModule */], [[3, __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["a" /* BrowserModule */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_15__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["e" /* HttpClientXsrfModule */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["e" /* HttpClientXsrfModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["d" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["d" /* HttpClientModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_18__angular_router__["s" /* ɵa */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["v" /* ɵd */], [[3, __WEBPACK_IMPORTED_MODULE_18__angular_router__["l" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_18__angular_router__["r" /* UrlSerializer */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["c" /* DefaultUrlSerializer */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_18__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["b" /* ChildrenOutletContexts */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_12__angular_common__["a" /* APP_BASE_HREF */], "/", []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_18__angular_router__["h" /* ROUTER_CONFIGURATION */], { useHash: true }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_12__angular_common__["h" /* LocationStrategy */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["u" /* ɵc */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["q" /* PlatformLocation */], [2, __WEBPACK_IMPORTED_MODULE_12__angular_common__["a" /* APP_BASE_HREF */]], __WEBPACK_IMPORTED_MODULE_18__angular_router__["h" /* ROUTER_CONFIGURATION */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_12__angular_common__["g" /* Location */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["g" /* Location */], [__WEBPACK_IMPORTED_MODULE_12__angular_common__["h" /* LocationStrategy */]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Compiler */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Compiler */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModuleFactoryLoader */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* SystemJsNgModuleLoader */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Compiler */], [2, __WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* SystemJsNgModuleLoaderConfig */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_18__angular_router__["j" /* ROUTES */], function () { return [[{ path: "pages", loadChildren: "app/pages/pages.module#PagesModule" }, { path: "", redirectTo: "pages", pathMatch: "full" }, { path: "**", redirectTo: "pages" }]]; }, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](1024, __WEBPACK_IMPORTED_MODULE_18__angular_router__["l" /* Router */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["w" /* ɵe */], [__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* ApplicationRef */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["r" /* UrlSerializer */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["b" /* ChildrenOutletContexts */], __WEBPACK_IMPORTED_MODULE_12__angular_common__["g" /* Location */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injector */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModuleFactoryLoader */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Compiler */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["j" /* ROUTES */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["h" /* ROUTER_CONFIGURATION */], [2, __WEBPACK_IMPORTED_MODULE_18__angular_router__["q" /* UrlHandlingStrategy */]], [2, __WEBPACK_IMPORTED_MODULE_18__angular_router__["k" /* RouteReuseStrategy */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_18__angular_router__["n" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_18__angular_router__["n" /* RouterModule */], [[2, __WEBPACK_IMPORTED_MODULE_18__angular_router__["s" /* ɵa */]], [2, __WEBPACK_IMPORTED_MODULE_18__angular_router__["l" /* Router */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_49__app_routing_module__["a" /* AppRoutingModule */], __WEBPACK_IMPORTED_MODULE_49__app_routing_module__["a" /* AppRoutingModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_48__app_config_module__["c" /* AppConfigModule */], __WEBPACK_IMPORTED_MODULE_48__app_config_module__["c" /* AppConfigModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_50__ng_bootstrap_ng_bootstrap_alert_alert_module__["a" /* NgbAlertModule */], __WEBPACK_IMPORTED_MODULE_50__ng_bootstrap_ng_bootstrap_alert_alert_module__["a" /* NgbAlertModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_51__ng_bootstrap_ng_bootstrap_buttons_buttons_module__["a" /* NgbButtonsModule */], __WEBPACK_IMPORTED_MODULE_51__ng_bootstrap_ng_bootstrap_buttons_buttons_module__["a" /* NgbButtonsModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_52__ng_bootstrap_ng_bootstrap_collapse_collapse_module__["a" /* NgbCollapseModule */], __WEBPACK_IMPORTED_MODULE_52__ng_bootstrap_ng_bootstrap_collapse_collapse_module__["a" /* NgbCollapseModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_53__ng_bootstrap_ng_bootstrap_progressbar_progressbar_module__["a" /* NgbProgressbarModule */], __WEBPACK_IMPORTED_MODULE_53__ng_bootstrap_ng_bootstrap_progressbar_progressbar_module__["a" /* NgbProgressbarModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_54__ng_bootstrap_ng_bootstrap_tooltip_tooltip_module__["a" /* NgbTooltipModule */], __WEBPACK_IMPORTED_MODULE_54__ng_bootstrap_ng_bootstrap_tooltip_tooltip_module__["a" /* NgbTooltipModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_55__ng_bootstrap_ng_bootstrap_typeahead_typeahead_module__["a" /* NgbTypeaheadModule */], __WEBPACK_IMPORTED_MODULE_55__ng_bootstrap_ng_bootstrap_typeahead_typeahead_module__["a" /* NgbTypeaheadModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_56__ng_bootstrap_ng_bootstrap_accordion_accordion_module__["a" /* NgbAccordionModule */], __WEBPACK_IMPORTED_MODULE_56__ng_bootstrap_ng_bootstrap_accordion_accordion_module__["a" /* NgbAccordionModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_57__ng_bootstrap_ng_bootstrap_carousel_carousel_module__["a" /* NgbCarouselModule */], __WEBPACK_IMPORTED_MODULE_57__ng_bootstrap_ng_bootstrap_carousel_carousel_module__["a" /* NgbCarouselModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_19__angular_forms__["o" /* ɵba */], __WEBPACK_IMPORTED_MODULE_19__angular_forms__["o" /* ɵba */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_19__angular_forms__["e" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_19__angular_forms__["e" /* FormsModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_58__ng_bootstrap_ng_bootstrap_datepicker_datepicker_module__["a" /* NgbDatepickerModule */], __WEBPACK_IMPORTED_MODULE_58__ng_bootstrap_ng_bootstrap_datepicker_datepicker_module__["a" /* NgbDatepickerModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_59__ng_bootstrap_ng_bootstrap_dropdown_dropdown_module__["a" /* NgbDropdownModule */], __WEBPACK_IMPORTED_MODULE_59__ng_bootstrap_ng_bootstrap_dropdown_dropdown_module__["a" /* NgbDropdownModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_60__ng_bootstrap_ng_bootstrap_modal_modal_module__["a" /* NgbModalModule */], __WEBPACK_IMPORTED_MODULE_60__ng_bootstrap_ng_bootstrap_modal_modal_module__["a" /* NgbModalModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_61__ng_bootstrap_ng_bootstrap_pagination_pagination_module__["a" /* NgbPaginationModule */], __WEBPACK_IMPORTED_MODULE_61__ng_bootstrap_ng_bootstrap_pagination_pagination_module__["a" /* NgbPaginationModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_62__ng_bootstrap_ng_bootstrap_popover_popover_module__["a" /* NgbPopoverModule */], __WEBPACK_IMPORTED_MODULE_62__ng_bootstrap_ng_bootstrap_popover_popover_module__["a" /* NgbPopoverModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_63__ng_bootstrap_ng_bootstrap_rating_rating_module__["a" /* NgbRatingModule */], __WEBPACK_IMPORTED_MODULE_63__ng_bootstrap_ng_bootstrap_rating_rating_module__["a" /* NgbRatingModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_64__ng_bootstrap_ng_bootstrap_tabset_tabset_module__["a" /* NgbTabsetModule */], __WEBPACK_IMPORTED_MODULE_64__ng_bootstrap_ng_bootstrap_tabset_tabset_module__["a" /* NgbTabsetModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_65__ng_bootstrap_ng_bootstrap_timepicker_timepicker_module__["a" /* NgbTimepickerModule */], __WEBPACK_IMPORTED_MODULE_65__ng_bootstrap_ng_bootstrap_timepicker_timepicker_module__["a" /* NgbTimepickerModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_66__ng_bootstrap_ng_bootstrap_index__["b" /* NgbRootModule */], __WEBPACK_IMPORTED_MODULE_66__ng_bootstrap_ng_bootstrap_index__["b" /* NgbRootModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_19__angular_forms__["n" /* ReactiveFormsModule */], __WEBPACK_IMPORTED_MODULE_19__angular_forms__["n" /* ReactiveFormsModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_67__nebular_theme_components_shared_shared_module__["a" /* NbSharedModule */], __WEBPACK_IMPORTED_MODULE_67__nebular_theme_components_shared_shared_module__["a" /* NbSharedModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_68__nebular_theme_components_card_card_module__["a" /* NbCardModule */], __WEBPACK_IMPORTED_MODULE_68__nebular_theme_components_card_card_module__["a" /* NbCardModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_69__nebular_theme_components_layout_layout_module__["a" /* NbLayoutModule */], __WEBPACK_IMPORTED_MODULE_69__nebular_theme_components_layout_layout_module__["a" /* NbLayoutModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_70__nebular_theme_components_tabset_tabset_module__["a" /* NbTabsetModule */], __WEBPACK_IMPORTED_MODULE_70__nebular_theme_components_tabset_tabset_module__["a" /* NbTabsetModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_71__nebular_theme_components_route_tabset_route_tabset_module__["a" /* NbRouteTabsetModule */], __WEBPACK_IMPORTED_MODULE_71__nebular_theme_components_route_tabset_route_tabset_module__["a" /* NbRouteTabsetModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_72__nebular_theme_components_menu_menu_module__["a" /* NbMenuModule */], __WEBPACK_IMPORTED_MODULE_72__nebular_theme_components_menu_menu_module__["a" /* NbMenuModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_73__nebular_theme_components_user_user_module__["a" /* NbUserModule */], __WEBPACK_IMPORTED_MODULE_73__nebular_theme_components_user_user_module__["a" /* NbUserModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_74__nebular_theme_components_actions_actions_module__["a" /* NbActionsModule */], __WEBPACK_IMPORTED_MODULE_74__nebular_theme_components_actions_actions_module__["a" /* NbActionsModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_75__nebular_theme_components_search_search_module__["a" /* NbSearchModule */], __WEBPACK_IMPORTED_MODULE_75__nebular_theme_components_search_search_module__["a" /* NbSearchModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_76__nebular_theme_components_sidebar_sidebar_module__["a" /* NbSidebarModule */], __WEBPACK_IMPORTED_MODULE_76__nebular_theme_components_sidebar_sidebar_module__["a" /* NbSidebarModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_77__nebular_theme_components_checkbox_checkbox_module__["a" /* NbCheckboxModule */], __WEBPACK_IMPORTED_MODULE_77__nebular_theme_components_checkbox_checkbox_module__["a" /* NbCheckboxModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_66__ng_bootstrap_ng_bootstrap_index__["a" /* NgbModule */], __WEBPACK_IMPORTED_MODULE_66__ng_bootstrap_ng_bootstrap_index__["a" /* NgbModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_78__theme_theme_module__["a" /* ThemeModule */], __WEBPACK_IMPORTED_MODULE_78__theme_theme_module__["a" /* ThemeModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_79__core_core_module__["a" /* CoreModule */], __WEBPACK_IMPORTED_MODULE_79__core_core_module__["a" /* CoreModule */], [[3, __WEBPACK_IMPORTED_MODULE_79__core_core_module__["a" /* CoreModule */]]]), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](512, __WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], __WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["k" /* ɵe */], "XSRF-TOKEN", []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["l" /* ɵf */], "X-XSRF-TOKEN", []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_48__app_config_module__["a" /* APP_CONFIG */], __WEBPACK_IMPORTED_MODULE_48__app_config_module__["b" /* APP_DI_CONFIG */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["d" /* nbThemeOptionsToken */], {}, []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["a" /* nbBuiltInJSThemesToken */], __WEBPACK_IMPORTED_MODULE_39__nebular_theme_services_js_themes_registry_service__["a" /* BUILT_IN_THEMES */], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["b" /* nbJSThemesToken */], [{ name: "default", base: null, variables: { temperature: ["#42db7d", "#42db7d", "#42db7d", "#42db7d", "#42db7d"], solar: { gradientLeft: "#42db7d", gradientRight: "#42db7d", shadowColor: "rgba(0, 0, 0, 0)", radius: ["80%", "90%"] }, traffic: { colorBlack: "#000000", tooltipBg: "#ffffff", tooltipBorderColor: "#c0c8d1", tooltipExtraCss: "border-radius: 10px; padding: 4px 16px;", tooltipTextColor: "#2a2a2a", tooltipFontWeight: "bolder", lineBg: "#c0c8d1", lineShadowBlur: "1", itemColor: "#bcc3cc", itemBorderColor: "#bcc3cc", itemEmphasisBorderColor: "#42db7d", shadowLineDarkBg: "rgba(0, 0, 0, 0)", shadowLineShadow: "rgba(0, 0, 0, 0)", gradFrom: "#ebeef2", gradTo: "#ebeef2" }, electricity: { tooltipBg: "#ffffff", tooltipLineColor: "rgba(0, 0, 0, 0)", tooltipLineWidth: "0", tooltipBorderColor: "#ebeef2", tooltipExtraCss: "border-radius: 10px; padding: 8px 24px;", tooltipTextColor: "#2a2a2a", tooltipFontWeight: "bolder", axisLineColor: "rgba(0, 0, 0, 0)", xAxisTextColor: "#2a2a2a", yAxisSplitLine: "#ebeef2", itemBorderColor: "#42db7d", lineStyle: "solid", lineWidth: "4", lineGradFrom: "#42db7d", lineGradTo: "#42db7d", lineShadow: "rgba(0, 0, 0, 0)", areaGradFrom: "rgba(235, 238, 242, 0.5)", areaGradTo: "rgba(235, 238, 242, 0.5)", shadowLineDarkBg: "rgba(0, 0, 0, 0)" }, bubbleMap: { titleColor: "#484848", areaColor: "#dddddd", areaHoverColor: "#cccccc", areaBorderColor: "#ebeef2" }, echarts: { bg: "#ffffff", textColor: "#484848", axisLineColor: "#bbbbbb", splitLineColor: "#ebeef2", itemHoverShadowColor: "rgba(0, 0, 0, 0.5)", tooltipBackgroundColor: "#6a7985", areaOpacity: "0.7" }, chartjs: { axisLineColor: "#cccccc", textColor: "#484848" } } }, { name: "cosmic", base: "default", variables: { temperature: ["#2ec7fe", "#31ffad", "#7bff24", "#fff024", "#f7bd59"], solar: { gradientLeft: "#7bff24", gradientRight: "#2ec7fe", shadowColor: "#19977E", radius: ["70%", "90%"] }, traffic: { colorBlack: "#000000", tooltipBg: "rgba(0, 255, 170, 0.35)", tooltipBorderColor: "#00d977", tooltipExtraCss: "box-shadow: 0px 2px 46px 0 rgba(0, 255, 170, 0.35); border-radius: 10px; padding: 4px 16px;", tooltipTextColor: "#ffffff", tooltipFontWeight: "normal", lineBg: "#d1d1ff", lineShadowBlur: "14", itemColor: "#BEBBFF", itemBorderColor: "#ffffff", itemEmphasisBorderColor: "#ffffff", shadowLineDarkBg: "#655ABD", shadowLineShadow: "rgba(33, 7, 77, 0.5)", gradFrom: "rgba(118, 89, 255, 0.4)", gradTo: "rgba(164, 84, 255, 0.5)" }, electricity: { tooltipBg: "rgba(0, 255, 170, 0.35)", tooltipLineColor: "rgba(255, 255, 255, 0.1)", tooltipLineWidth: "1", tooltipBorderColor: "#00d977", tooltipExtraCss: "box-shadow: 0px 2px 46px 0 rgba(0, 255, 170, 0.35); border-radius: 10px; padding: 8px 24px;", tooltipTextColor: "#ffffff", tooltipFontWeight: "normal", axisLineColor: "rgba(161, 161 ,229, 0.3)", xAxisTextColor: "#a1a1e5", yAxisSplitLine: "rgba(161, 161 ,229, 0.2)", itemBorderColor: "#ffffff", lineStyle: "dotted", lineWidth: "6", lineGradFrom: "#00ffaa", lineGradTo: "#fff835", lineShadow: "rgba(14, 16, 48, 0.4)", areaGradFrom: "rgba(188, 92, 255, 0.5)", areaGradTo: "rgba(188, 92, 255, 0)", shadowLineDarkBg: "#a695ff" }, bubbleMap: { titleColor: "#ffffff", areaColor: "#2c2961", areaHoverColor: "#a1a1e5", areaBorderColor: "#654ddb" }, echarts: { bg: "#3d3780", textColor: "#ffffff", axisLineColor: "#a1a1e5", splitLineColor: "#342e73", itemHoverShadowColor: "rgba(0, 0, 0, 0.5)", tooltipBackgroundColor: "#6a7985", areaOpacity: "1" }, chartjs: { axisLineColor: "#a1a1e5", textColor: "#ffffff" } } }], []), __WEBPACK_IMPORTED_MODULE_0__angular_core__["_33" /* ɵmpd */](256, __WEBPACK_IMPORTED_MODULE_40__nebular_theme_theme_options__["c" /* nbMediaBreakpointsToken */], __WEBPACK_IMPORTED_MODULE_41__nebular_theme_services_breakpoints_service__["a" /* DEFAULT_MEDIA_BREAKPOINTS */], [])]); });
 
 
 
@@ -1332,61 +1116,9 @@ var AppComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_core_module__ = __webpack_require__("../../../../../src/app/@core/core.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__theme_theme_module__ = __webpack_require__("../../../../../src/app/@theme/theme.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_config_module__ = __webpack_require__("../../../../../src/app/app-config.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-/**
- * @license
- * Copyright Akveo. All Rights Reserved.
- * Licensed under the MIT License. See License.txt in the project root for license information.
- */
-
-
-
-
-
-
-
-
-
-
-
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["J" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_9__app_config_module__["c" /* AppConfigModule */],
-                __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_8__theme_theme_module__["a" /* ThemeModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5__core_core_module__["a" /* CoreModule */].forRoot(),
-            ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]],
-            providers: [
-                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_common__["a" /* APP_BASE_HREF */], useValue: '/' },
-            ],
-        })
-    ], AppModule);
     return AppModule;
 }());
 
@@ -1421,9 +1153,9 @@ var environment = {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module_ngfactory__ = __webpack_require__("../../../../../src/app/app.module.ngfactory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /**
  * @license
  * Copyright Akveo. All Rights Reserved.
@@ -1433,10 +1165,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* enableProdMode */])();
+if (__WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* enableProdMode */])();
 }
-Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
+__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["j" /* platformBrowser */]().bootstrapModuleFactory(__WEBPACK_IMPORTED_MODULE_2__app_app_module_ngfactory__["a" /* AppModuleNgFactory */])
     .catch(function (err) { return console.log(err); });
 
 
