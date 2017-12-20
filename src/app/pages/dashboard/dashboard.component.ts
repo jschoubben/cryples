@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { APP_CONFIG, AppConfig } from '../../app-config.module';
 import { CryptoService } from '../../@core/data/crypto.service';
 import { Balance, MarketSummary, MarketOverview } from '../../@core/models/bittrex.models';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
     selector: 'ngx-dashboard',
@@ -16,7 +17,11 @@ export class DashboardComponent {
     private marketOverview: MarketOverview;
     public totalWalletValue: number = 0;
 
-    constructor(private router: Router, @Inject(APP_CONFIG) private config: AppConfig, private cryptoService: CryptoService) {
+    constructor(
+        private router: Router, @Inject(APP_CONFIG)
+        private config: AppConfig,
+        private cryptoService: CryptoService,
+        private toastr: ToastrService) {
         if (!config.apiconfig.key || !config.apiconfig.secret) {
             router.navigate(['/pages/configure']);
             return;
@@ -47,6 +52,9 @@ export class DashboardComponent {
             },
             // Errors will call this callback instead:
             err => {
+                if (err.message === 'APIKEY_INVALID') {
+                    this.toastr.error('Your API key or secret is invalid. Please check the configuration page.', 'Error');
+                }
                 console.log(err);
             }
         );

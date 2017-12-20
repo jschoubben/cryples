@@ -1,4 +1,22 @@
 <div class="row">
+    <div class="col-xl-12">
+        <nb-card>
+            <div class="icon-container">
+                <div class="icon">
+                    <i class="fa fa-dollar"></i>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="title">
+                    USDT
+                </div>
+                <div class="status">
+                    {{totalWalletValue | currency:'USD'}}
+                </div>
+            </div>
+        </nb-card>
+    </div>
     <div class="col-xxl-6 col-xl-12" *ngFor="let balance of balances">
         <nb-card>
             <div class="icon-container">

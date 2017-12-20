@@ -11,6 +11,7 @@ import { Observable } from 'rxjs/Observable';
 export class BalanceListComponent implements OnInit {
 
     @Input() balances: Balance[];
+    @Input() totalWalletValue: number;
 
     ngOnInit = function () {
     };

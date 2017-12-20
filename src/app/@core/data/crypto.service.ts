@@ -18,10 +18,14 @@ export class CryptoService {
             marketOverview.usdMarkets = data.filter(m => m.marketName.toLowerCase().startsWith('usd'));
             marketOverview.bitcoinMarkets = data.filter(m => !m.marketName.toLowerCase().startsWith('usd'));
             return marketOverview;
+        }).catch(err => {
+            return Observable.throw(err.error);
         });
     };
 
     public getBalances = function (): Observable<Balance[]> {
-        return this.http.post(this.config.baseUrl + '/getBalances', this.config.apiconfig);
+        return this.http.post(this.config.baseUrl + '/getBalances', this.config.apiconfig).catch(err => {
+            return Observable.throw(err.error);
+        });
     };
 }

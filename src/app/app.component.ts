@@ -4,6 +4,7 @@
  * Licensed under the MIT License. See License.txt in the project root for license information.
  */
 import { Component } from '@angular/core';
+import { NbThemeService } from '@nebular/theme';
 
 @Component({
     selector: 'ngx-app',
@@ -11,5 +12,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-    constructor() { }
+    constructor(private themeService: NbThemeService) {
+        themeService.changeTheme(localStorage.getItem('DEFAULT_THEME') || 'default');
+    }
 }

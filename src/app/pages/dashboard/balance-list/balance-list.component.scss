@@ -25,6 +25,7 @@
             -webkit-backface-visibility: hidden; //color: nb-theme(color-white);
             padding: 12px 20px;
             @include btn-hero-primary();
+            color: #fff;
             &.success {}
             &.danger {}
         }

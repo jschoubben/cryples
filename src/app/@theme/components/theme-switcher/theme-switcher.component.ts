@@ -21,7 +21,6 @@ export class ThemeSwitcherComponent implements OnInit {
     theme: NbJSThemeOptions;
 
     constructor(private themeService: NbThemeService) {
-        themeService.changeTheme(localStorage.getItem('DEFAULT_THEME') || 'default');
     }
 
     ngOnInit() {

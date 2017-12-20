@@ -57,6 +57,7 @@
         "nebular-icons": "1.0.6",
         "ng2-smart-table": "1.1.0",
         "ng2-tree": "2.0.0-alpha.10",
+        "ngx-toastr": "^8.0.0",
         "node-bittrex-api": "^0.8.1",
         "normalize.css": "6.0.0",
         "pace-js": "1.0.2",
