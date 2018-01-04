@@ -14,7 +14,11 @@ module.exports = {
             newO = {};
             for (origKey in o) {
                 if (o.hasOwnProperty(origKey)) {
-                    newKey = (origKey.charAt(0).toLowerCase() + origKey.slice(1) || origKey).toString();
+                    if (origKey.toUpperCase() === origKey) {
+                        newKey = origKey.toLowerCase();
+                    } else {
+                        newKey = (origKey.charAt(0).toLowerCase() + origKey.slice(1) || origKey).toString();
+                    }
                     value = o[origKey];
                     if (value instanceof Array || value !== null && value.constructor === Object) {
                         value = this.toCamel(value);

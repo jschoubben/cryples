@@ -1,43 +1,66 @@
 <div class="row">
     <div class="col-xl-12">
-        <nb-card>
-            <div class="icon-container">
-                <div class="icon">
-                    <i class="fa fa-dollar"></i>
+        <nb-card (click)="toggleCard(-1)">
+            <div class="card-content">
+                <div class="icon-container">
+                    <div class="icon" [ngClass]="{'danger': totalProfitValue[currency] < 0, 'success': totalProfitValue[currency] > 0}">
+                        <i class="cf cf-{{currency}}"></i>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="title">
+                        {{ totalWalletValue[currency] | currency:currency.toUpperCase() }}
+                        <span class="status">({{totalBtcBalance}} BTC)</span>
+                    </div>
+                    <div class="status">
+                        Deposit: {{totalDepositValue[currency] | currency:currency.toUpperCase()}}
+                    </div>
+                    <div class="status">
+                        Withdrawals: {{totalWithdrawalValue[currency] | currency:currency.toUpperCase()}}
+                    </div>
+                    <div class="status">
+                        Profit: {{totalProfitValue[currency] | currency:currency.toUpperCase()}}
+                        <b>{{totalDepositValue.percent(totalProfitValue) | percent }}</b>
+                    </div>
                 </div>
             </div>
-
-            <div class="details">
-                <div class="title">
-                    USDT
-                </div>
-                <div class="status">
-                    {{totalWalletValue | currency:'USD'}}
-                </div>
+            <div class="expand-area" *ngIf="expandedBalances.indexOf(-1) >= 0">
+                test
             </div>
         </nb-card>
     </div>
-    <div class="col-xxl-6 col-xl-12" *ngFor="let balance of balances">
-        <nb-card>
-            <div class="icon-container">
-                <div class="icon" [ngClass]="{'danger': !balance.valueUp, 'success': balance.valueUp}">
-                    <i class="cf cf-{{ balance.currency | lowercase }}"></i>
+    <div class="col-xxl-6 col-xl-12" *ngFor="let balance of balances; let i=index;">
+        <nb-card (click)="toggleCard(i)">
+            <div class="card-content">
+                <div class="icon-container">
+                    <div class="icon" [ngClass]="{'danger': !balance.valueUp, 'success': balance.valueUp}">
+                        <i class="cf cf-{{ balance.currency | lowercase }}"></i>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="title">
+                        {{ balance.available }} {{ balance.currency }}
+                        <span class="status">({{balance.btcMarket?.last * balance.available}} BTC)</span>
+                        <div class="pull-right">
+                            {{ balance.currentValue[currency] | currency:currency.toUpperCase() }}
+                        </div>
+                    </div>
+                    <div class="status" *ngIf="balance.totalProfitValue">
+                        Profit: {{balance.totalProfitValue[currency] | currency:currency.toUpperCase()}}
+                        <br />Invested: {{balance.investedValue[currency] | currency:currency.toUpperCase() }}
+                        <b>{{balance.investedValue.percent(balance.totalProfitValue) | percent}}</b>
+                    </div>
+                    <div class="status">
+                        Current price: {{balance.btcMarket?.last }}BTC
+                        <span *ngIf="balance.usdMarket">-{{balance.usdMarket?.last | currency:'USD'}}</span>
+
+                        <br />Current CC: {{ balance.currencyValue[currency] | currency:currency.toUpperCase()}}
+                    </div>
                 </div>
             </div>
-
-            <div class="details">
-                <div class="title">
-                    {{ balance.currency }}
-                </div>
-                <div class="status">
-                    {{ balance.available }}
-                </div>
-                <div class="status">
-                    {{ balance.pending }}
-                </div>
-                <div class="status">
-                    {{ balance.usdRate * balance.available | currency:'USD' }}
-                </div>
+            <div class="expand-area" *ngIf="expandedBalances.indexOf(i) >= 0">
+                <ng2-smart-table [settings]="tableSettings" [source]="balance.transactions"></ng2-smart-table>
             </div>
         </nb-card>
     </div>

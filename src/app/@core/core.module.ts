@@ -5,28 +5,28 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
 import { DataModule } from './data/data.module';
 
 const NB_CORE_PROVIDERS = [
-  DataModule.forRoot().providers,
+    DataModule.forRoot().providers,
 ];
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  exports: [
-  ],
-  declarations: [],
+    imports: [
+        CommonModule
+    ],
+    exports: [
+    ],
+    declarations: [],
 })
 export class CoreModule {
-  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
-    throwIfAlreadyLoaded(parentModule, 'CoreModule');
-  }
+    constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
+        throwIfAlreadyLoaded(parentModule, 'CoreModule');
+    }
 
-  static forRoot(): ModuleWithProviders {
-    return <ModuleWithProviders>{
-      ngModule: CoreModule,
-      providers: [
-        ...NB_CORE_PROVIDERS,
-      ],
-    };
-  }
+    static forRoot(): ModuleWithProviders {
+        return <ModuleWithProviders>{
+            ngModule: CoreModule,
+            providers: [
+                ...NB_CORE_PROVIDERS,
+            ],
+        };
+    }
 }

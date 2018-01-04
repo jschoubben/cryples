@@ -20,7 +20,7 @@ import {
 import {
     FooterComponent,
     HeaderComponent,
-    ThemeSwitcherComponent,
+    SwitchComponent,
 } from './components';
 import { CapitalizePipe, PluralPipe, RoundPipe, TimingPipe } from './pipes';
 import {
@@ -48,7 +48,7 @@ const NB_MODULES = [
 ];
 
 const COMPONENTS = [
-    ThemeSwitcherComponent,
+    SwitchComponent,
     HeaderComponent,
     FooterComponent,
     OneColumnLayoutComponent,

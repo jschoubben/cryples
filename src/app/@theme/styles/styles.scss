@@ -4,7 +4,7 @@
 @import './sprites/sprite.crypto';
 // framework component themes (styles tied to theme variables)
 @import '~@nebular/theme/styles/globals';
-@import "~ngx-toastr/toastr-bs4-alert";
+@import "~ngx-toastr/toastr";
 // loading progress bar theme
 @import './pace.theme';
 // install the framework and custom global styles

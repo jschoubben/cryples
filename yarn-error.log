@@ -71,7 +71,6 @@ npm manifest:
           "intl": "1.2.5",
           "ionicons": "2.0.1",
           "nebular-icons": "1.0.6",
-          "ng2-smart-table": "1.1.0",
           "ng2-tree": "2.0.0-alpha.10",
           "node-bittrex-api": "^0.8.1",
           "normalize.css": "6.0.0",
@@ -4202,13 +4201,6 @@ Lockfile:
   ng2-completer@^1.2.2:
     version "1.6.3"
     resolved "https://registry.yarnpkg.com/ng2-completer/-/ng2-completer-1.6.3.tgz#b12c902b786f685c6b1256dd87d746e2abf2e505"
-  
-  ng2-smart-table@1.1.0:
-    version "1.1.0"
-    resolved "https://registry.yarnpkg.com/ng2-smart-table/-/ng2-smart-table-1.1.0.tgz#0e9538d6253346611107b3895d606d6422482ecb"
-    dependencies:
-      lodash "^4.17.4"
-      ng2-completer "^1.2.2"
   
   ng2-tree@2.0.0-alpha.10:
     version "2.0.0-alpha.10"

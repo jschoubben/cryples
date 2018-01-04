@@ -16,6 +16,8 @@
 }
 
 @include generate-icon('xlm');
+@include generate-icon('usd');
+@include generate-icon('eur');
 @include generate-icon('ada-alt');
 @include generate-icon('ada');
 @include generate-icon('adc-alt');

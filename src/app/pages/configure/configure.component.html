@@ -10,7 +10,8 @@
                     <br />
                     <br />Your keys will be stored in
                     <b>local storage</b>, therefore, you can generate a new key for each device or re-use the same key on all
-                    your devices.
+                    your devices. You can generate a new api key in your
+                    <a target="_blank" href="https://bittrex.com/Manage#sectionApi">Bittrex settings</a>.
                     <br />
                     <br/>Make sure your connection is secure because your key will be submitted to the server to make a request
                     to bittrex.
@@ -30,7 +31,15 @@
         <nb-card>
             <nb-card-header>Theme options</nb-card-header>
             <nb-card-body>
-                <ngx-theme-switcher></ngx-theme-switcher>
+                <ngx-switch [options]="themes" [selectedOption]="selectedTheme" [storageKey]="'DEFAULT_THEME'" (selectionChanged)="themeChanged($event)"></ngx-switch>
+            </nb-card-body>
+        </nb-card>
+    </div>
+    <div class="col-xxxl-4 col-md-6 col-sm-12">
+        <nb-card>
+            <nb-card-header>Currency</nb-card-header>
+            <nb-card-body>
+                <ngx-switch [options]="currencies" [selectedOption]="selectedCurrency" [storageKey]="'CURRENCY'" (selectionChanged)="currencyChanged($event)"></ngx-switch>
             </nb-card-body>
         </nb-card>
     </div>

@@ -1,14 +1,9 @@
-export class Market {
-    marketCurrency: string;
-    baseCurrency: string;
-    marketCurrencyLong: string;
-    baseCurrencyLong: string;
-    minTradeSize: number;
-    marketName: string;
-    isActive: boolean;
-    created: Date;
+export class MarketSummaryOverview {
+    usdMarkets: MarketSummary[];
+    bitcoinMarkets: MarketSummary[];
 }
 
+// Used to get the last 24 hour summary of an exchange
 export class MarketSummary {
     marketName: string;
     high: number;
@@ -26,11 +21,12 @@ export class MarketSummary {
     displayMarketName?: boolean;
 }
 
-export class MarketOverview {
-    usdMarkets: MarketSummary[];
-    bitcoinMarkets: MarketSummary[];
+export class MarketHistoryOverview {
+    usdMarkets: MarketHistory[];
+    bitcoinMarkets: MarketHistory[];
 }
 
+// Used when the latest orders are requested
 export class MarketHistory {
     id: number;
     timeStamp: Date;
@@ -41,22 +37,15 @@ export class MarketHistory {
     orderType: string;
 }
 
-export class Currency {
-    currency: string;
-    currencyLong: string;
-    minConfirmation: number;
-    txFee: number;
-    isActive: boolean;
-    coinType: string;
-    baseAddress?: string;
-}
-
+// Order book for a given market
 export class OrderBook {
-    buy: Order[];
-    sell: Order[];
+    market: string;
+    buy: SmallOrder[];
+    sell: SmallOrder[];
 }
 
-export class Order {
+// Small class to store the orderbook orders
+export class SmallOrder {
     quantitiy: number;
     rate: number;
 }
@@ -67,6 +56,7 @@ export class Ticker {
     last: number;
 }
 
+// Used to store the balances of a user
 export class Balance {
     currency: string;
     balance: number;
@@ -75,7 +65,19 @@ export class Balance {
     cryptoAddress: string;
     requested: boolean;
     uuid?: string;
-    usdRate?: number;
+    currencyValue?: CurrencyValue;
+    deposits?: HistoryTransaction[];
+    withdrawals?: HistoryTransaction[];
+    buyOrders?: HistoryOrder[];
+    sellOrders?: HistoryOrder[];
+    transactions?: Transaction[];
+    investedValue?: CurrencyValue;
+    totalBuyValue?: CurrencyValue;
+    totalSellValue?: CurrencyValue;
+    totalProfitValue?: CurrencyValue;
+    currentValue?: CurrencyValue;
+    usdMarket?: MarketSummary;
+    btcMarket?: MarketSummary;
 }
 
 export class DepositAddress {
@@ -83,7 +85,8 @@ export class DepositAddress {
     address: string;
 }
 
-export class MarketOrder {
+// Details of an order (retrieved by uuid)
+export class Order {
     accountId?: string;
     orderUuid: string;
     exchange: string;
@@ -96,10 +99,8 @@ export class MarketOrder {
     commissionReserved: number;
     commissionReserveRemaining: number;
     commissionPaid: number;
-    price: number;
     pricePerUnit?: number;
     opened: Date;
-    closed?: Date;
     isOpen: boolean;
     sentinel: string;
     cancelInitiated: boolean;
@@ -107,35 +108,85 @@ export class MarketOrder {
     isConditional: boolean;
     condition: string;
     conditionTarget?: string;
+    currencyValue?: CurrencyValue;
 }
 
-export class MarketOrderHistory {
+// Order created by the user himself (trade BTC for XLM...)
+export class HistoryOrder {
     orderUuid: string;
     exchange: string;
     timeStamp: Date;
     orderType: string;
     limit: number;
+    currency: string;
     quantity: number;
     quantityRemaining: number;
     commission: number;
-    price: number;
     pricePerUnit?: number;
     isConditional: boolean;
     condition?: string;
     conditionTarget?: string;
     immediateOrCancel: boolean;
+    price: number;
+    currencyValue?: CurrencyValue;
 }
 
-export class MarketTransactionHistory {
-    paymentUuid: string;
-    currency: string;
+// Transactions done by the user himself (deposits and withdrawals of USD)
+export class HistoryTransaction {
+    id: string;
     amount: number;
-    address: string;
-    opened: Date;
-    authorized: boolean;
-    pendingPayment: boolean;
-    txCost: number;
-    txId?: string;
-    canceled: boolean;
-    invalidAddress: boolean;
+    currency: string;
+    confirmations: number;
+    lastUpdated: Date;
+    txId: string;
+    cryptoAddress: string;
+    currencyValue?: CurrencyValue;
+}
+
+export class Transaction {
+    type: TransactionType;
+    amount: number;
+    price: CurrencyValue;
+    total: CurrencyValue;
+}
+
+export class CurrencyValue {
+    usd: number;
+    eur: number;
+
+    constructor(usd?: number, eur?: number) {
+        this.usd = usd || 0;
+        this.eur = eur || 0;
+    }
+
+    add = (price: CurrencyValue, factor: number = 1) => {
+        this.usd += price.usd * factor;
+        this.eur += price.eur * factor;
+    }
+
+    subtract = (price: CurrencyValue, factor: number = 1) => {
+        this.usd -= price.usd * factor;
+        this.eur -= price.eur * factor;
+    }
+
+    percent = (price: CurrencyValue): number => {
+        return (price.usd / this.usd);
+    }
+
+    multiply = (amount: number): CurrencyValue => {
+        return new CurrencyValue(this.usd * amount, this.eur * amount);
+    }
+}
+
+export class BittrexResponse {
+    message: string;
+    success: boolean;
+    result: any;
+}
+
+export enum TransactionType {
+    Deposit,
+    Withdrawal,
+    BuyOrder,
+    SellOrder
 }

@@ -2,43 +2,31 @@
 @import '~@nebular/theme/styles/global/bootstrap/hero-buttons';
 @include nb-install-component() {
     nb-card {
-        flex-direction: row;
-        align-items: center;
-        overflow: visible;
-        $bevel: btn-hero-bevel(nb-theme(card-bg));
-        $shadow: nb-theme(btn-hero-shadow);
-        box-shadow: $bevel, $shadow;
-        .icon-container {
-            height: 100%;
-            padding: 0.625rem;
-        }
         .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 5.75rem;
-            height: 4.75rem;
-            font-size: 3.75rem; //border-radius: nb-theme(card-border-radius);
-            transition: width 0.4s ease;
-            transform: translate3d(0, 0, 0);
-            -webkit-transform-style: preserve-3d;
-            -webkit-backface-visibility: hidden; //color: nb-theme(color-white);
-            padding: 12px 20px;
-            @include btn-hero-primary();
-            color: #fff;
-            &.success {}
-            &.danger {}
+            float: left;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            font-size: 80px;
+            line-height: 80px;
+            color: #000;
+            i {
+                width: 100%;
+                text-align: center;
+                display: inline-block;
+                background-color: #000;
+            }
+            &.success {
+                background: theme-color("success");
+            }
         }
         &:hover {
             cursor: pointer;
         }
         .details {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-            padding: 0 0.5rem 0 0.75rem;
-            border-left: 1px solid transparent;
+            float: right;
+            padding: 10px;
+            width: calc(100% - 100px);
         }
         .title {
             font-family: nb-theme(font-secondary);
@@ -49,8 +37,14 @@
         .status {
             font-size: 1rem;
             font-weight: nb-theme(font-weight-light);
-            text-transform: uppercase;
             color: nb-theme(card-fg);
+        }
+        .pull-right {
+            float: right;
+        }
+        .expand-area {
+            padding: 10px;
+            border-top: 1px solid #ccc;
         }
     }
     @include nb-for-theme(cosmic) {

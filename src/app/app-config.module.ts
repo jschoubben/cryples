@@ -6,6 +6,7 @@ export let APP_CONFIG = new InjectionToken<AppConfig>('app.config');
 export class AppConfig {
     baseUrl: string;
     apiconfig: ApiConfig;
+    currency: string;
 }
 
 export class ApiConfig {
@@ -18,7 +19,8 @@ export const APP_DI_CONFIG: AppConfig = {
     apiconfig: {
         key: localStorage.getItem('APIKEY'),
         secret: localStorage.getItem('APISECRET')
-    }
+    },
+    currency: localStorage.getItem('CURRENCY') || 'usd'
 };
 
 @NgModule({
