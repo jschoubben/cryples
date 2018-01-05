@@ -1,26 +1,17 @@
 <div class="row">
     <div class="col-xl-12">
-        <nb-card (click)="toggleCard(-1)">
+        <nb-card (click)="toggleCard(-1)" [ngClass]="{'danger': totalProfitValue < 0, 'success': totalProfitValue > 0}">
             <div class="card-content">
                 <div class="icon-container">
-                    <div class="icon" [ngClass]="{'danger': totalProfitValue[currency] < 0, 'success': totalProfitValue[currency] > 0}">
-                        <i class="cf cf-{{currency}}"></i>
+                    <div class="icon">
+                        <i class="cf cf-usd"></i>
                     </div>
                 </div>
                 <div class="details">
                     <div class="title">
-                        {{ totalWalletValue[currency] | currency:currency.toUpperCase() }}
-                        <span class="status">({{totalBtcBalance}} BTC)</span>
-                    </div>
-                    <div class="status">
-                        Deposit: {{totalDepositValue[currency] | currency:currency.toUpperCase()}}
-                    </div>
-                    <div class="status">
-                        Withdrawals: {{totalWithdrawalValue[currency] | currency:currency.toUpperCase()}}
-                    </div>
-                    <div class="status">
-                        Profit: {{totalProfitValue[currency] | currency:currency.toUpperCase()}}
-                        <b>{{totalDepositValue.percent(totalProfitValue) | percent }}</b>
+                        {{ dashboardInfo.totalValue?.usd | currency:'USD' }}
+                        <br/>
+                        <span class="status">{{ dashboardInfo.totalValue?.btc }}BTC</span>
                     </div>
                 </div>
             </div>
@@ -29,33 +20,24 @@
             </div>
         </nb-card>
     </div>
-    <div class="col-xxl-6 col-xl-12" *ngFor="let balance of balances; let i=index;">
-        <nb-card (click)="toggleCard(i)">
+    <div class="col-xxl-6 col-xl-12" *ngFor="let balance of dashboardInfo.balances; let i=index;">
+        <nb-card (click)="toggleCard(i)" [ngClass]="{'danger': balance.totalProfitValue < 0, 'success': balance.totalProfitValue > 0}">
             <div class="card-content">
                 <div class="icon-container">
-                    <div class="icon" [ngClass]="{'danger': !balance.valueUp, 'success': balance.valueUp}">
+                    <div class="icon">
                         <i class="cf cf-{{ balance.currency | lowercase }}"></i>
                     </div>
                 </div>
 
                 <div class="details">
                     <div class="title">
-                        {{ balance.available }} {{ balance.currency }}
-                        <span class="status">({{balance.btcMarket?.last * balance.available}} BTC)</span>
-                        <div class="pull-right">
-                            {{ balance.currentValue[currency] | currency:currency.toUpperCase() }}
-                        </div>
+                        {{ balance.balance }} {{ balance.currency }}
                     </div>
-                    <div class="status" *ngIf="balance.totalProfitValue">
-                        Profit: {{balance.totalProfitValue[currency] | currency:currency.toUpperCase()}}
-                        <br />Invested: {{balance.investedValue[currency] | currency:currency.toUpperCase() }}
-                        <b>{{balance.investedValue.percent(balance.totalProfitValue) | percent}}</b>
+                    <div class="status" *ngIf="currency === 'usd'">
+                        {{ balance.totalValue[currency] | currency:currency.toUpperCase() }}
                     </div>
-                    <div class="status">
-                        Current price: {{balance.btcMarket?.last }}BTC
-                        <span *ngIf="balance.usdMarket">-{{balance.usdMarket?.last | currency:'USD'}}</span>
-
-                        <br />Current CC: {{ balance.currencyValue[currency] | currency:currency.toUpperCase()}}
+                    <div class="status" *ngIf="currency !== 'usd'">
+                        {{ balance.totalValue[currency] }}{{ currency.toUpperCase() }}
                     </div>
                 </div>
             </div>

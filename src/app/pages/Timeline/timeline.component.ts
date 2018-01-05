@@ -2,7 +2,7 @@ import { Component, Inject, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { APP_CONFIG, AppConfig } from '../../app-config.module';
 import { CryptoService } from '../../@core/data/crypto.service';
-import { Balance, MarketSummary, HistoryOrder, CurrencyValue, HistoryTransaction } from '../../@core/models/bittrex.models';
+import { Balance } from '../../@core/models/bittrex.models';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -12,9 +12,6 @@ import { ToastrService } from 'ngx-toastr';
     templateUrl: './timeline.component.html',
 })
 export class TimelineComponent {
-    private orders: HistoryOrder[];
-    private currencyTransations: HistoryTransaction[];
-
     constructor(
         private router: Router, @Inject(APP_CONFIG)
         private config: AppConfig,

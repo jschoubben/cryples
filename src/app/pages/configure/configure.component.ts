@@ -19,7 +19,7 @@ export class ConfigureComponent {
     selectedTheme: string = localStorage.getItem('DEFAULT_THEME');
     currencies: SwitchOptions = {
         option1: 'usd',
-        option2: 'eur'
+        option2: 'btc'
     };
     selectedCurrency: string = localStorage.getItem('CURRENCY');
 

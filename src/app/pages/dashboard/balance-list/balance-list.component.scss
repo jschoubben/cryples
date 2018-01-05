@@ -2,6 +2,12 @@
 @import '~@nebular/theme/styles/global/bootstrap/hero-buttons';
 @include nb-install-component() {
     nb-card {
+        &.success {
+            border: 1px solid rgba(0, 255, 0, 0.6);
+        }
+        &.danger {
+            border: 1px solid rgba(255, 0, 0, 0.6);
+        }
         .icon {
             float: left;
             padding: 10px;
@@ -49,17 +55,18 @@
     }
     @include nb-for-theme(cosmic) {
         nb-card {
-            .icon-container {
-                padding: 0;
+            &.success {
+                border: none;
+                box-shadow: 0 2px 30px 0 rgba(0, 255, 0, 0.6);
             }
-            .details {
-                padding-left: 1.25rem;
+            &.danger {
+                border: none;
+                box-shadow: 0 2px 40px 0 rgba(255, 0, 0, 0.6);
             }
             .icon {
-                width: 7rem;
-                height: 100%;
-                font-size: 4.5rem;
-                border-radius: nb-theme(card-border-radius) 0 0 nb-theme(card-border-radius);
+                i {
+                    background-color: #fff;
+                }
             }
             .title {
                 font-weight: nb-theme(font-weight-bolder);

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation, Inject } from '@angular/core';
-import { Balance, CurrencyValue, TransactionType, Transaction } from '../../../@core/models/bittrex.models';
+import { Dashboard } from '../../../@core/models/bittrex.models';
 import { Observable } from 'rxjs/Observable';
 import { APP_CONFIG, AppConfig } from '../../../app-config.module';
 
@@ -10,45 +10,22 @@ import { APP_CONFIG, AppConfig } from '../../../app-config.module';
     templateUrl: './balance-list.component.html',
 })
 export class BalanceListComponent implements OnInit {
-    @Input() balances: Balance[];
-    @Input() totalWalletValue: CurrencyValue;
-    @Input() totalDepositValue: CurrencyValue;
-    @Input() totalWithdrawalValue: CurrencyValue;
-    @Input() totalProfitValue: CurrencyValue;
-    @Input() totalBtcBalance: number;
+    @Input() dashboardInfo: Dashboard;
     currency: string;
     expandedBalances: number[] = [];
     tableSettings = {
         columns: {
             type: {
-                title: 'Type',
-                valuePrepareFunction: (value) => {
-                    if (value)
-                        return TransactionType[value];
-                    else
-                        return '/';
-                }
+                title: 'Type'
             },
             amount: {
                 title: 'Amount'
             },
-            price: {
-                title: 'Price',
-                valuePrepareFunction: (value: number) => {
-                    if (typeof value === 'object')
-                        return value[this.currency].toFixed(2);
-                    else
-                        return value;
-                }
+            totalPrice: {
+                title: 'Total'
             },
-            total: {
-                title: 'Total',
-                valuePrepareFunction: (value: number) => {
-                    if (typeof value === 'object')
-                        return value[this.currency].toFixed(2);
-                    else
-                        return value;
-                }
+            currency: {
+                title: 'Currency'
             }
         },
         actions: {
@@ -56,7 +33,8 @@ export class BalanceListComponent implements OnInit {
             edit: false,
             delete: false,
             custom: []
-        }
+        },
+        hideSubHeader: true
     };
 
     constructor( @Inject(APP_CONFIG) private config: AppConfig) {
